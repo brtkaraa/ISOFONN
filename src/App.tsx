@@ -107,7 +107,8 @@ export default function App() {
     setCurrentFund(null);
   };
 
-  const handleApplyCall = (_fund: Fund) => {
+  const handleApplyCall = (fund: Fund) => {
+    setCurrentFund(fund);
     setOverlayView('new-project');
   };
 
@@ -117,12 +118,27 @@ export default function App() {
 
   const handleProjectCreated = (project: Project) => {
     setCurrentProject(project);
-    setOverlayView('fund-matching');
+    if (currentFund) {
+      setOverlayView('doc-gen');
+    } else {
+      setOverlayView('fund-matching');
+    }
   };
 
   const handleSelectProject = (project: Project) => {
     setCurrentProject(project);
     setOverlayView('fund-matching');
+  };
+
+  const handleApplyToExisting = (project: Project, fund: Fund) => {
+    setCurrentProject(project);
+    setCurrentFund(fund);
+    supabase
+      .from('projects')
+      .update({ selected_fund_id: fund.id })
+      .eq('id', project.id)
+      .then();
+    setOverlayView('doc-gen');
   };
 
   const handleSelectDraft = async (project: Project, draft: ProjectDraft) => {
@@ -241,7 +257,7 @@ export default function App() {
       );
     } else if (page === 'funds') {
       content = currentFund ? (
-        <CallDetail fund={currentFund} onBack={handleCallDetailBack} onApply={handleApplyCall} />
+        <CallDetail fund={currentFund} onBack={handleCallDetailBack} onApply={handleApplyCall} onApplyExisting={handleApplyToExisting} />
       ) : (
         <FundsPage onSelectFund={handleSelectCall} />
       );

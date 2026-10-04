@@ -1,0 +1,802 @@
+                                               Opportunity Opportunity                                             Type of
+Record ID            Provider  Programme                               Call ID    Topic ID   Support ID   Status              Summary                Objective            Target Applicants        Turkey
+                                               Name          Type                                                  Action
+eu:topic:ESF-2027-   European    European         Structured topic      ESF-2027-  ESF-2027- UNKNOWN       OPEN     ESF-PJG Call for proposals to Create the                EU-level networks of NOT_S
+PEP-ENGAGEMENT       CommissionSocial Fund + dialogue with             PEP-       PEP-                             ESF Projectselect and fund one conditions for a        NGOs; international non-
+                               (ESF)           people with             ENGAGEMENT ENGAGEMENT                       Grants     consortium of non-     sustained dialogue governmental
+                               [ÇELİŞKİ:       lived                                                                          profit organisations between                organisations (INGOs)
+                               kaynaklar       experience of                                                                  with experience in     policymakers and with headquarters in an
+                               farklı; ayrıntı poverty                                                                        facilitating the       individuals with     EU Member State; non-
+                               yorumda]                                                                                       engagement of          lived experience of profit organisations
+                                                                                                                              people with lived      poverty, so that     (consortium)
+                                                                                                                              experience of poverty those affected by
+                                                                                                                              in the Commission's poverty and/or
+                                                                                                                              structured dialogue social exclusion
+                                                                                                                              on poverty and social have a real and
+                                                                                                                              inclusion. Funded      influential voice in
+                                                                                                                              activities include     decisions shaping
+                                                                                                                              dissemination of calls their lives; empower
+                                                                                                                              for expressions of     participants and
+                                                                                                                              interest, introduction champion
+                                                                                                                              meetings,              intersectionality.
+                                                                                                                              travel/accommodation
+                                                                                                                              for participants,
+                                                                                                                              national and regional
+                                                                                                                              participation hubs, a
+                                                                                                                              toolkit, and a
+                                                                                                                              communication
+                                                                                                                              campaign against
+                                                                                                                              stigma.
+
+
+
+
+eu:topic:SOCPL-2026- European    Social      SOCPL-       topic     SOCPL-2026- SOCPL-2026- UNKNOWN        OPEN      SOCPL-       EU action grants       To develop            Works councils or            CON
+INFO-REPR            CommissionPrerogative 2026-INFO-             INFO-REPR    INFO-REPR                           PJG          under SOCPL to         employees'            similar bodies               [KOŞU
+                               and Specific REPR                                                                   SOCPL        develop employees' involvement in            representing workers;        entities
+                               Competencies                                                                        Project      involvement in         undertakings by       European, national,          benefic
+                               Lines                                                                               Grants       undertakings, in       raising awareness regional, sectoral or multi- entities
+                               (SOCPL)                                                                                          particular the take-up and contributing to sectoral trade unions;         coordin
+                                                                                                                                and effective          the application of Employers' organisations applica
+                                                                                                                                functioning of         EU law and policies at European, national,
+                                                                                                                                European Works         in this area,         regional, sectoral or multi-
+                                                                                                                                Councils, and to       supporting social sectoral level; Technical
+                                                                                                                                accompany industry dialogue at               bodies (non-profit training
+                                                                                                                                transitions through    company level to or research bodies) and
+                                                                                                                                company-level social accompany               commercial companies if
+                                                                                                                                dialogue. Open to      industry transitions project is non-profit
+                                                                                                                                workers' and           and the take-up and
+                                                                                                                                employers'             effective functioning
+                                                                                                                                representative         of European Works
+                                                                                                                                organisations (and in Councils.
+                                                                                                                                some cases technical
+                                                                                                                                bodies) from EU
+                                                                                                                                Member States and
+                                                                                                                                Candidate Countries.
+                                                                                                                                Budget EUR 2 500
+                                                                                                                                000 for 8 to 10
+                                                                                                                                projects.
+
+
+
+
+eu:topic:HORIZON-JU- European    Horizon     Neutral-Atom topic     HORIZON-JU- HORIZON-JU- UNKNOWN        OPEN                   RIA funding the          Establish         NOT_SPECIFIED                  ELIG
+EUROHPC-2026-        CommissionEurope      Platform               EUROHPC-     EUROHPC-                            HORIZON-     advancement of           European
+NAPT-11-01                     (HORIZON)   Technologies           2026-NAPT-11 2026-NAPT-11-                       JU-RIA       neutral-atom quantum leadership in
+                                                                               01                                  HORIZON      processor platforms neutral-atom
+                                                                                                                   JU           (quantum simulation quantum simulation
+                                                                                                                   Research     and gate-based           and digital quantum
+                                                                                                                   and          computing) with          computing.
+                                                                                                                   Innovation   practical applications,
+                                                                                                                   Actions      cloud access, HPC
+                                                                                                                                integration and EU
+                                                                                                                                supply chain
+                                                                                                                                components.
+                                                                                                                                Participation is limited
+                                                                                                                                to legal entities in
+                                                                                                                                EuroHPC JU
+                                                                                                                                Member/Participating
+                                                                                                                                States. EU
+                                                                                                                                contribution estimated
+                                                                                                                                at EUR 20 million;
+                                                                                                                                expected duration 3.5
+                                                                                                                                years.
+eu:topic:HORIZON-JU- European    Horizon    Next-      topic            HORIZON-JU- HORIZON-JU- UNKNOWN    OPEN                  Research and             Strengthen       NOT_SPECIFIED           ELIG
+EUROHPC-2026-        CommissionEurope      Generation                 EUROHPC-     EUROHPC-                       HORIZON-     Innovation Action        Europe's strategic
+NQKD-12-01                     (HORIZON)   QKD Systems                2026-NQKD-12 2026-NQKD-12-                  JU-RIA       supporting applied       autonomy in
+                                                                                   01                             HORIZON      R&D in advanced          quantum-secure
+                                                                                                                  JU           QKD systems and          communications by
+                                                                                                                  Research     their integration into advancing core
+                                                                                                                  and          future secure            QKD technologies
+                                                                                                                  Innovation   communication            and integration
+                                                                                                                  Actions      networks, avoiding       capabilities.
+                                                                                                                               overlap with EuroQCI
+                                                                                                                               deployment.
+                                                                                                                               Participation is limited
+                                                                                                                               to legal entities
+                                                                                                                               established in
+                                                                                                                               EuroHPC JU
+                                                                                                                               Member/Participating
+                                                                                                                               States. Expected EU
+                                                                                                                               contribution is EUR
+                                                                                                                               24 million, duration
+                                                                                                                               3.5 years, TRL 4 to 7.
+
+
+
+
+eu:topic:HORIZON-JU- European    Horizon     Quantum       topic        HORIZON-JU- HORIZON-JU- UNKNOWN    OPEN                   The action              Strengthen        NOT_SPECIFIED          ELIG
+EUROHPC-2026-        CommissionEurope      Experimental               EUROHPC-     EUROHPC-                       HORIZON-     implements the pilot Europe's leadership
+QEXP-14-01                     (HORIZON)   Pilot Lines for            2026-QEXP-14 2026-QEXP-14-                  JU-RIA       production elements and strategic
+                                           Quantum                                 01                             HORIZON      of the Qu-Pilot         autonomy in
+                                           Technologies                                                           JU           Framework               quantum
+                                                                                                                  Research     Partnership             technologies by
+                                                                                                                  and          Agreement,              advancing
+                                                                                                                  Innovation   advancing               experimental pilot
+                                                                                                                  Actions      experimental pilot line line capacities as a
+                                                                                                                               capacities for TRL 4– stepping stone
+                                                                                                                               6 quantum hardware toward future
+                                                                                                                               technologies as a       industrial-scale
+                                                                                                                               step between            quantum hardware
+                                                                                                                               academic research production.
+                                                                                                                               and Chips JU pilot
+                                                                                                                               lines. It is a HORIZON
+                                                                                                                               JU Research and
+                                                                                                                               Innovation Action with
+                                                                                                                               an indicative budget
+                                                                                                                               of EUR 15,000,000
+                                                                                                                               for one expected
+                                                                                                                               grant.
+
+
+
+
+eu:topic:HORIZON-   European    Horizon      Additional       topic    HORIZON-       HORIZON-   UNKNOWN   OPEN               Co-funded action to To continue to         Coordinator of the          CON
+CL6-2026-04-        CommissionEurope       activities for the         CL6-2026-04   CL6-2026-04-                  HORIZON- continue support to provide support to consortium funded under         [KOŞU
+GOVERNANCE-01                 (HORIZON)    European                                 GOVERNANCE-                   COFUND the European              the European         HORIZON-CL6-2024-         listed a
+                                           Partnership of                           01                            HORIZON Partnership of           partnership of       GOVERNANCE-02-01          Country
+                                           Agriculture of                                                         Programme Agriculture of Data by Agriculture of Data (European Partnership of   Annexe
+                                           Data                                                                   Cofund    funding additional     and in particular to Agriculture of Data)      topic re
+                                                                                                                  Actions   activities (possibly   fund additional                                by the e
+                                                                                                                            with additional        activities (which                              coordin
+                                                                                                                            partners) through an may also be                                      particip
+                                                                                                                            amendment of the       undertaken by                                  addition
+                                                                                                                            existing grant         additional partners)
+                                                                                                                            agreement under        in view of its
+                                                                                                                            HORIZON-CL6-2024- intended scope and
+                                                                                                                            GOVERNANCE-02- duration, in
+                                                                                                                            01. The proposal       accordance with
+                                                                                                                            must be submitted by Article 24(2) of the
+                                                                                                                            the coordinator of the Horizon Europe
+                                                                                                                            existing consortium. Regulation.
+                                                                                                                            Indicative topic
+                                                                                                                            budget is EUR 60
+                                                                                                                            million; funding rate
+                                                                                                                            30%.
+eu:topic:CREA-MEDIA- European    Creative     European     topic     CREA-MEDIA- CREA-MEDIA- UNKNOWN       OPEN     CREA-LS Lump sum grants          To foster the        Independent European NOT_S
+2027-DEVSLATE        CommissionEurope       slate                  2027-        2027-                             CREA     for independent         competitiveness of audiovisual production
+                               Programme    development            DEVSLATE     DEVSLATE                          Lump Sum European audiovisual European                companies
+                               (CREA)                                                                             Grants   production companies independent
+                                                                                                                           to develop a slate of 3 production
+                                                                                                                           to 5 works (fiction,    companies and
+                                                                                                                           animation, creative increase their
+                                                                                                                           documentary),           economic weight on
+                                                                                                                           optionally with a short the market;
+                                                                                                                           film by emerging        increase capacity of
+                                                                                                                           talent. Requested       producers to
+                                                                                                                           grant between EUR develop projects
+                                                                                                                           90 000 and EUR 510 with potential to
+                                                                                                                           000 per project; call circulate throughout
+                                                                                                                           budget EUR 22 374 Europe and
+                                                                                                                           320.                    beyond, and
+                                                                                                                                                   facilitate European
+                                                                                                                                                   and international
+                                                                                                                                                   co-production.
+
+
+
+
+eu:topic:HORIZON-EIC-European    Horizon      The          topic     HORIZON-     HORIZON-    UNKNOWN      OPEN                  The European Prize To celebrate the UNKNOWN                           CON
+2026-PRIZE-WIP       CommissionEurope       European Prize         EIC-2026-    EIC-2026-                         HORIZON- for Women Innovatorswomen                                                [KOŞU
+                               (HORIZON)    for Women              PRIZE-WIP    PRIZE-WIP                         RPr         is an EU recognition entrepreneurs                                    listed a
+                                            Innovators                                                            HORIZON prize awarded to          behind Europe's                                 Europe
+                                                                                                                  Recognition women founders/co- game-changing                                      countrie
+                                                                                                                  Prize       founders from the EU innovations so that                              Annexe
+                                                                                                                              and Horizon Europe they may inspire                                   require
+                                                                                                                              associated countries other women and                                  the wom
+                                                                                                                              who turned ideas into girls to realise their                          establis
+                                                                                                                              disruptive            full potential as the                           compan
+                                                                                                                              innovations. It has   EU's future                                     country
+                                                                                                                              three categories      scientists,                                     applica
+                                                                                                                              (Women Innovators, innovators and tech                                if assoc
+                                                                                                                              Rising Innovators, EITleaders; and to                                 valid at
+                                                                                                                              Women Leadership); support a culture
+                                                                                                                              the top three         allowing women to
+                                                                                                                              applications in each become the
+                                                                                                                              category receive      innovators and
+                                                                                                                              prizes. Applicants    entrepreneurs of
+                                                                                                                              apply as natural      tomorrow.
+                                                                                                                              persons.
+
+
+
+
+eu:topic:HORIZON-EIC-European    Horizon      Rising       topic     HORIZON-     HORIZON-       UNKNOWN   OPEN                 The Rising             The prize              Women founders or co- CON
+2026-PRIZE-WIP-      CommissionEurope       Innovators             EIC-2026-    EIC-2026-                         HORIZON- Innovators category celebrates the               founders of              [KOŞU
+RisingInnovators               (HORIZON)    category               PRIZE-WIP    PRIZE-WIP-                        RPr         of the European Prize women                   companies/organisations, listed a
+                                                                                RisingInnovators                  HORIZON for Women Innovatorsentrepreneurs                 applying as natural      Europe
+                                                                                                                  Recognition 2027 awards three      behind Europe's        persons, aged under 35 countrie
+                                                                                                                  Prize       prizes (EUR 50 000, game-changing             (Rising Innovators)      must be
+                                                                                                                              30 000, 20 000) to the innovations, so that                            there a
+                                                                                                                              highest-ranked         they may inspire                                establis
+                                                                                                                              women founders or other women and                                      associa
+                                                                                                                              co-founders aged       girls to realise their                          the priz
+                                                                                                                              under 35 who apply full potential as the                               valid at
+                                                                                                                              as natural persons. EU's future                                        work pr
+                                                                                                                              The innovators come scientists,                                        adoptio
+                                                                                                                              from the EU or         innovators, and
+                                                                                                                              countries associated tech leaders; it
+                                                                                                                              to Horizon Europe      supports a culture
+                                                                                                                              and have transformed allowing women to
+                                                                                                                              ideas into disruptive become the
+                                                                                                                              innovations.           innovators and
+                                                                                                                                                     entrepreneurs of
+                                                                                                                                                     tomorrow.
+eu:topic:HORIZON-EIT- European    Horizon        Women        topic     HORIZON-     HORIZON-   UNKNOWN      OPEN                 Recognition prize     The prize aims to Women founders or co- CON
+2026-PRIZE-WIP-       CommissionEurope         Leadership             EIT-2026-    EIT-2026-                        HORIZON- (EIT Women               boost public       founders of a company or [KOŞU
+LEADERSHIP                      (HORIZON)      Category               PRIZE-WIP    PRIZE-WIP-                       RPr         Leadership category) awareness of the organisation, applying as listed a
+                                                                                   LEADERSHIP                       HORIZON of the European Prize potential,             natural persons, with a associa
+                                                                                                                    Recognition for Women             importance and     direct link to the EIT   Genera
+                                                                                                                    Prize       Innovators. Awarded contribution of      Community                allows
+                                                                                                                                to women founders or women to the EU                              associa
+                                                                                                                                co-founders applying innovation                                   (legally
+                                                                                                                                as natural persons, ecosystem and                                 establis
+                                                                                                                                residing in an EU     create strong role                          does no
+                                                                                                                                Member State/OCT ormodels, inspiring
+                                                                                                                                Horizon Europe        more women to
+                                                                                                                                associated country, become innovators.
+                                                                                                                                with a direct link to
+                                                                                                                                the EIT Community.
+                                                                                                                                Three prizes are
+                                                                                                                                awarded (1st, 2nd,
+                                                                                                                                3rd).
+
+
+
+
+eu:topic:ISF-2026-TF2- European   Internal Digital      topic          ISF-2026-TF2- ISF-2026-TF2- UNKNOWN   OPEN     ISF-PJG     Call for EU action      (1) developing      law enforcement         NOT_S
+AG-CYBER-DIGITAL CommissionSecurity Fund Investigations               AG-CYBER      AG-CYBER-                       ISF Project grants under the ISF capacity and           authorities; judicial
+                                (ISF)                                               DIGITAL                         Grants      for digital             expertise of law    authorities; public or
+                                                                                                                                investigations:         enforcement and private legal entities (non-
+                                                                                                                                projects enhancing judicial authorities; profit coordinators; profit-
+                                                                                                                                the operational         (2) contributing to making only as
+                                                                                                                                capacity of law         the implementation beneficiaries/affiliated
+                                                                                                                                enforcement and/or of EU law and            entities)
+                                                                                                                                judicial authorities to strategic
+                                                                                                                                counter cybercrime. documents; (3)
+                                                                                                                                Main beneficiaries are fostering cross-
+                                                                                                                                law enforcement         border cooperation
+                                                                                                                                and/or judicial         between law
+                                                                                                                                authorities in EU       enforcement/judicial
+                                                                                                                                Member States and authorities and
+                                                                                                                                third countries with an private entities.
+                                                                                                                                agreement with
+                                                                                                                                Europol. Topic budget
+                                                                                                                                EUR 5 000 000;
+                                                                                                                                grants of EUR 1 000
+                                                                                                                                000–2 500 000, 24
+                                                                                                                                months.
+
+
+
+
+eu:topic:ISF-2026-TF2- European    Internal                   topic    ISF-2026-TF2- ISF-2026-TF2- UNKNOWN   OPEN     ISF-PJG     Project grants            (1) developing       Law enforcement           NOT_S
+AG-CYBER-              CommissionSecurity Fund Standardisation        AG-CYBER      AG-CYBER-                       ISF Project under ISF for             capacity and         and/or judicial authorities
+STANDARD                         (ISF)                                              STANDARD                        Grants      standardisation           expertise of law     in EU Member States;
+                                                                                                                                supporting digital        enforcement and Third-country law
+                                                                                                                                investigations:           judicial authorities enforcement/judicial
+                                                                                                                                analysis of               for lawful access to authorities with Europol
+                                                                                                                                standardisation           data, using          agreement; Public or
+                                                                                                                                needs,                    solutions that are private non-profit bodies
+                                                                                                                                standardisation           interoperable and (experts from national
+                                                                                                                                activities (6G, digital   compatible with EU authorities, academia,
+                                                                                                                                forensics, vehicle        rules; (2)           national standardisation
+                                                                                                                                forensics, AI),           contributing to the bodies)
+                                                                                                                                awareness, training       implementation of
+                                                                                                                                and support for           EU law; (3)
+                                                                                                                                security practitioners'   fostering cross-
+                                                                                                                                participation in          border cooperation
+                                                                                                                                standardisation. Main     between law
+                                                                                                                                beneficiaries are law     enforcement/judicial
+                                                                                                                                enforcement and/or        authorities and
+                                                                                                                                judicial authorities in   private entities to
+                                                                                                                                EU Member States          develop
+                                                                                                                                and third countries       standardised data
+                                                                                                                                with a Europol            formats and
+                                                                                                                                agreement. Topic          communication
+                                                                                                                                budget EUR 1 500          protocols to request
+                                                                                                                                000; one project          and process digital
+                                                                                                                                expected.                 evidence.
+eu:topic:ERC-2027-   European    Horizon    ERC            topic    ERC-2027-    ERC-2027-   UNKNOWN   OPEN                 The ERC                 To support          Principal Investigators NOT_S
+COG                  CommissionEurope      Consolidator            COG          COG                           HORIZON-    Consolidator Grant excellent Principal      who defended PhD 5-15
+                               (HORIZON)   Grant                                                              ERC         supports excellent      Investigators who   years before 1 January
+                                                                                                              HORIZON     Principal Investigators are consolidating   2027 (any
+                                                                                                              ERC         who are consolidating their own             age/nationality), applying
+                                                                                                              Grants      their own               independent         with a Host Institution
+                                                                                                                          independent research research team or
+                                                                                                                          team or programme, programme; PI
+                                                                                                                          with up to EUR 2 000 should have
+                                                                                                                          000 for 60 months. already shown
+                                                                                                                          Applicants must have evidence of
+                                                                                                                          defended their PhD 5- research
+                                                                                                                          15 years before 1       independence.
+                                                                                                                          January 2027 and be
+                                                                                                                          hosted by a legal
+                                                                                                                          entity in an EU
+                                                                                                                          Member State or
+                                                                                                                          Associated Country.
+
+
+
+
+eu:topic:CREA-MEDIA- European   Creative     Innovative    topic     CREA-MEDIA- CREA-MEDIA- UNKNOWN   OPEN     CREA-    EU action grants          Encourage the        Legal entities (public or NOT_S
+2027-INNOVBUSMOD CommissionEurope          tools and               2027-        2027-                         PJG CREA under the Creative        development and/or private bodies);
+                              Programme    business                INNOVBUSMODINNOVBUSMOD                     Project  Europe MEDIA strand spread of                  International
+                              (CREA)       models                                                             Grants   for developing and/or innovative tools and organisations; Single
+                                                                                                                       spreading innovative business models to applicants or consortia
+                                                                                                                       tools and business        improve the
+                                                                                                                       models that improve visibility, availability,
+                                                                                                                       visibility, availability, audience and
+                                                                                                                       audience and              diversity of
+                                                                                                                       diversity of European European works in
+                                                                                                                       works, and the            the digital age
+                                                                                                                       competitiveness, AI and/or the
+                                                                                                                       adaptation and            competitiveness
+                                                                                                                       greening of the           and/or greening of
+                                                                                                                       European audiovisual the European
+                                                                                                                       industry (incl.           audiovisual industry
+                                                                                                                       videogames). Open (including
+                                                                                                                       to legal entities from videogames); also
+                                                                                                                       eligible countries;       enable the industry
+                                                                                                                       single applicants or to adapt to Artificial
+                                                                                                                       consortia. Topic          Intelligence and
+                                                                                                                       budget EUR 14 000 contribute to the
+                                                                                                                       000, funding rate         Apply AI Strategy.
+                                                                                                                       80%.
+
+
+
+
+eu:topic:DIGITAL- European    Digital                      topic    DIGITAL-      DIGITAL-   UNKNOWN   OPEN     DIGITAL- The topic funds        To support the         SMEs; start-ups;         NOT_S
+ECCC-2027-DEPLOY- CommissionEurope         Strengthening           ECCC-2027-   ECCC-2027-                    JU-SME    development and       market uptake and research and academia;
+CYBER-11-AI4SME             Programme      cybersecurity           DEPLOY-      DEPLOY-                       DIGITAL JUdeployment of AI-     dissemination of      public sector; NIS 2
+                            (DIGITAL)      capacities of           CYBER-11     CYBER-11-                     SME       powered               innovative AI-        Directive entities; Other
+                                           European                             AI4SME                        Support   cybersecurity         powered               industry actors and
+                                           SMEs with                                                          Actions   products, tools and cybersecurity           related stakeholders
+                                           cybersecure                                                                  services (e.g. a SaaS solutions (notably in (including providers of AI-
+                                           AI-powered                                                                   toolkit) for European SMEs, possibly        assisted functionalities)
+                                           solutions                                                                    SMEs, supporting      using results
+                                                                                                                        market uptake of      stemming from
+                                                                                                                        innovative AI-poweredHorizon Europe
+                                                                                                                        cybersecurity         projects or similar)
+                                                                                                                        solutions and         and improve
+                                                                                                                        improving cyber risk knowledge and
+                                                                                                                        management and        auditing of
+                                                                                                                        resilience. It is an  cybersecurity
+                                                                                                                        SME Support Action preparedness.
+                                                                                                                        with 50% funding rate
+                                                                                                                        and 75% for SMEs.
+eu:topic:DIGITAL- European    Digital     Coordinated topic     DIGITAL-     DIGITAL-    UNKNOWN   OPEN     DIGITAL- Funds two Cyber          Complement and Public bodies                  NOT_S
+ECCC-2027-DEPLOY- CommissionEurope      preparedness           ECCC-2027-   ECCC-2027-                    JU-SIMPLE Solidarity Act actions not duplicate efforts designated or entrusted
+CYBER-11-                   Programme   testing and            DEPLOY-      DEPLOY-                       DIGITAL JUunder the               by Member States by the Member State with
+COORDPREP                   (DIGITAL)   other                  CYBER-11     CYBER-11-                     Simple    Cybersecurity           and the Union to     cybersecurity
+                                        preparedness                        COORDPREP                     Grants    Emergency               increase protection responsibilities, including
+                                        actions                                                                     Mechanism: (1)          and resilience to    cybersecurity competent
+                                                                                                                    coordinated             cyber threats, in    authorities and CSIRTs
+                                                                                                                    preparedness testing particular for critical designated under NIS2;
+                                                                                                                    of entities in sectors industrial            Other relevant public or
+                                                                                                                    of high criticality and installations and    private partners may
+                                                                                                                    (2) other               infrastructures, by participate in the
+                                                                                                                    preparedness actions assisting Member consortium
+                                                                                                                    for entities in highly States in improving
+                                                                                                                    critical and other      preparedness for
+                                                                                                                    critical sectors.       cyber threats and
+                                                                                                                    Support targets public incidents with
+                                                                                                                    bodies with             knowledge and
+                                                                                                                    cybersecurity           expertise.
+                                                                                                                    responsibilities, such
+                                                                                                                    as competent
+                                                                                                                    authorities and
+                                                                                                                    CSIRTs, in Member
+                                                                                                                    States. Simple Grants
+                                                                                                                    with a 50% funding
+                                                                                                                    rate.
+
+
+
+
+eu:topic:DIGITAL- European    Digital     Cybersecure topic     DIGITAL-     DIGITAL-    UNKNOWN   OPEN     DIGITAL- Simple Grants (50% Addresses AI-              Technology providers; NOT_S
+ECCC-2027-DEPLOY- CommissionEurope      tools,                 ECCC-2027-   ECCC-2027-                    JU-SIMPLE funding rate) to      based technologies Operators of Cyber Hubs;
+CYBER-11-CYBERAI            Programme   technologies           DEPLOY-      DEPLOY-                       DIGITAL JUdevelop and deploy (including GenAI) Research and academia;
+                            (DIGITAL)   and services           CYBER-11     CYBER-11-                     Simple    AI-based              for national           Cybersecurity entities;
+                                        relying on AI                       CYBERAI                       Grants    cybersecurity systemsauthorities and         Public sector; NIS 2
+                                                                                                                    and tools (incl.      competent              Directive entities; Private
+                                                                                                                    GenAI) for National authorities,             sector; Other relevant
+                                                                                                                    and Cross-Border      including Cyber        stakeholders supporting
+                                                                                                                    Cyber Hubs, CSIRTs, Hubs, CSIRTs,            the deployment of cyber-
+                                                                                                                    competent authorities public bodies and secure AI solutions
+                                                                                                                    and NIS 2 entities.   NIS 2 entities, to
+                                                                                                                    Tool and service      strengthen capacity
+                                                                                                                    providers may apply, to analyse, detect
+                                                                                                                    also in a consortium and prevent cyber
+                                                                                                                    with Cyber Hubs.      threats, and to
+                                                                                                                    Indicative topic      address the
+                                                                                                                    budget EUR            security of AI itself.
+                                                                                                                    15,000,000 for about
+                                                                                                                    4 grants of EUR 3-5
+                                                                                                                    million.
+
+
+
+
+eu:topic:DIGITAL- European    Digital     Dual-use     topic    DIGITAL-     DIGITAL-    UNKNOWN   OPEN     DIGITAL- Funds dual-use           To enhance            Industrial players;     NOT_S
+ECCC-2027-DEPLOY- CommissionEurope      technologies           ECCC-2027-   ECCC-2027-                    JU-SIMPLE cybersecurity working cooperation             Defence Ministries and
+CYBER-11-DUALUSE            Programme                          DEPLOY-      DEPLOY-                       DIGITAL JUprototypes, ready-to- between the civil Agencies; Ministries of
+                            (DIGITAL)                          CYBER-11     CYBER-11-                     Simple    market products and and defence               Interior; SMEs and start-
+                                                                            DUALUSE                       Grants    operational             spheres regarding ups; Law enforcement;
+                                                                                                                    infrastructures         dual use projects, Other relevant actors in
+                                                                                                                    relevant to both        services,             the European
+                                                                                                                    civilian and defence competences and Cybersecurity Civilian and
+                                                                                                                    contexts, to enhance applications in          Defence Spheres
+                                                                                                                    operational             cybersecurity in line
+                                                                                                                    cooperation between with Article 6.1(f) of
+                                                                                                                    the civil and defence the DEP Regulation
+                                                                                                                    spheres. Targeted at and Article 5.3(g) of
+                                                                                                                    stakeholders in the the ECCC
+                                                                                                                    civilian (including law Regulation.
+                                                                                                                    enforcement) and
+                                                                                                                    defence spheres such
+                                                                                                                    as industry, defence
+                                                                                                                    ministries, ministries
+                                                                                                                    of interior, SMEs and
+                                                                                                                    start-ups. Simple
+                                                                                                                    Grant with 50%
+                                                                                                                    funding rate.
+eu:topic:DIGITAL- European    Digital                     topic    DIGITAL-     DIGITAL-    UNKNOWN   OPEN     DIGITAL- Simple Grants (50% Support the                 industrial stakeholders; NOT_S
+ECCC-2027-DEPLOY- CommissionEurope      Strengthening             ECCC-2027-   ECCC-2027-                    JU-SIMPLE funding rate)           European              SMEs and start-ups;
+CYBER-11-EULEG              Programme   EU                        DEPLOY-      DEPLOY-                       DIGITAL JUsupporting the          ecosystem to          Member State competent
+                            (DIGITAL)   cybersecurity             CYBER-11     CYBER-11-                     Simple    European ecosystem strengthen its             authorities; CSIRTs;
+                                        capacities &                           EULEG                         Grants    to strengthen           cybersecurity         SOCs; Operators of
+                                        capabilities in                                                                cybersecurity           capacities and        Essential Services; digital
+                                        line with                                                                      capacities and          support the           service providers; ISACs;
+                                        legislative                                                                    implement EU            implementation of certification bodies
+                                        requirements                                                                   cybersecurity           the regulatory
+                                                                                                                       legislation (CRA, NIS framework in line
+                                                                                                                       2, GDPR, DORA,          with the CRA, NIS 2
+                                                                                                                       Cybersecurity Act, AI Directive, GDPR,
+                                                                                                                       Act), including tools, DORA,
+                                                                                                                       training, certification Cybersecurity Act,
+                                                                                                                       support and             specific
+                                                                                                                       cybersecurity skills requirements of the
+                                                                                                                       challenges. Targets AI Act, etc. in a
+                                                                                                                       industrial              homogeneous
+                                                                                                                       stakeholders, SMEs, approach; also
+                                                                                                                       start-ups, competent promote
+                                                                                                                       authorities, CSIRTs, cybersecurity
+                                                                                                                       certification bodies    challenges
+                                                                                                                       and others within       activities to address
+                                                                                                                       scope of the            the skills shortage.
+                                                                                                                       legislation.
+eu:topic:DIGITAL- European    Digital     Enhancing   topic    DIGITAL-     DIGITAL-    UNKNOWN   OPEN     DIGITAL- Simple Grants          To support the     National Coordination NOT_S
+ECCC-2027-DEPLOY- CommissionEurope      the NCC               ECCC-2027-   ECCC-2027-                    JU-SIMPLE supporting the        operation of the   Centres recognised by
+CYBER-11-NCC                Programme   Network               DEPLOY-      DEPLOY-                       DIGITAL JUoperation of National NCCs and enable the Commission as
+                            (DIGITAL)                         CYBER-11     CYBER-11-NCC                  Simple    Coordination Centres them to support the having the capacity to
+                                                                                                         Grants    (NCCs) recognised bycybersecurity        manage funds; other
+                                                                                                                   the Commission, so community,            private and public entities
+                                                                                                                   they can support the including SMEs, for in consortium with NCCs,
+                                                                                                                   cybersecurity         the uptake and     including academia and
+                                                                                                                   community, including dissemination of    research entities
+                                                                                                                   SMEs, in the uptake state-of-the-art
+                                                                                                                   of cybersecurity      cybersecurity
+                                                                                                                   solutions, awareness, solutions and
+                                                                                                                   skills and start-     strengthen
+                                                                                                                   up/SME scale-up.      cybersecurity
+                                                                                                                   NCCs may choose capacities.
+                                                                                                                   from the listed
+                                                                                                                   activities; FSTP is
+                                                                                                                   allowed. EU funding
+                                                                                                                   rate is 50%.
+
+
+
+
+eu:topic:DIGITAL- European    Digital    Regional     topic    DIGITAL-     DIGITAL-    UNKNOWN   OPEN     DIGITAL- Grants to create or Support the               Competent public          NOT_S
+ECCC-2027-DEPLOY- CommissionEurope      Cable Hubs            ECCC-2027-   ECCC-2027-                    JU-SIMPLE strengthen Regional progressive              authorities from at least
+CYBER-11-REGCABH            Programme                         DEPLOY-      DEPLOY-                       DIGITAL JUCable Hubs (one per establishment of         two Member States;
+                            (DIGITAL)                         CYBER-11     CYBER-11-                     Simple    EU sea basin) that      Regional Cable       Other relevant public or
+                                                                           REGCABH                       Grants    enhance detection of Hubs, one per EU private entities
+                                                                                                                   threats to undersea sea basin, to
+                                                                                                                   cables and situational enhance threat
+                                                                                                                   awareness. Funds        detection and
+                                                                                                                   preparatory activities, operational security
+                                                                                                                   operating costs, and around undersea
+                                                                                                                   acquisition of          cables.
+                                                                                                                   infrastructure, tools
+                                                                                                                   and services. Aimed
+                                                                                                                   at competent public
+                                                                                                                   authorities from at
+                                                                                                                   least two Member
+                                                                                                                   States, with other
+                                                                                                                   public or private
+                                                                                                                   entities able to join.
+eu:topic:CREA-MEDIA- European    Creative    Films on the topic      CREA-MEDIA- CREA-MEDIA- UNKNOWN   OPEN     CREA-     Grants for             Encourage and       European sales agents NOT_S
+2027-FILMOVE         CommissionEurope       Move                   2027-FILMOVE 2027-FILMOVE                  PJG CREA campaigns for the      support the wider (legal entities, public or
+                               Programme                                                                      Project  pan-European           distribution of      private)
+                               (CREA)                                                                         Grants   theatrical and/or      recent non-national
+                                                                                                                       online distribution of European films by
+                                                                                                                       recent non-national encouraging sales
+                                                                                                                       European films,        agents and
+                                                                                                                       coordinated by the     theatrical
+                                                                                                                       film's European sales distributors in
+                                                                                                                       agent. Single          particular to invest
+                                                                                                                       applicants (sales      in promotion and
+                                                                                                                       agents) established in adequate
+                                                                                                                       MEDIA-participating distribution of non-
+                                                                                                                       countries may apply; national European
+                                                                                                                       grants are budget-     films.
+                                                                                                                       based at a 90%
+                                                                                                                       funding rate, with two
+                                                                                                                       cut-off dates.
+
+
+
+
+eu:topic:CREA-MEDIA- European    Creative     European    topic      CREA-MEDIA- CREA-MEDIA- UNKNOWN   OPEN     CREA-LS Lump sum grants       To increase the    European video game NOT_S
+2027-DEVVGIM         CommissionEurope       video games            2027-DEVVGIM 2027-DEVVGIM                  CREA     for the concept      capacity of        production companies;
+                               Programme    and immersive                                                     Lump Sum development (pre-    European video     XR studios; audiovisual
+                               (CREA)       content                                                           Grants   production) of       game producers, production companies
+                                                                                                                       narrative video gamesXR studios and
+                                                                                                                       and interactive      audiovisual
+                                                                                                                       immersive            production
+                                                                                                                       experiences. Aimed companies to
+                                                                                                                       at European video    develop video
+                                                                                                                       game production      games and
+                                                                                                                       companies, XR        interactive
+                                                                                                                       studios and          immersive
+                                                                                                                       audiovisual          experiences with
+                                                                                                                       production           the potential to
+                                                                                                                       companies. Maximum reach global
+                                                                                                                       EUR 200 000 per      audiences, and
+                                                                                                                       project at a 60%     improve the
+                                                                                                                       funding rate; topic  competitiveness of
+                                                                                                                       budget EUR 13 500 the European video
+                                                                                                                       000.                 games industry by
+                                                                                                                                            enabling retention
+                                                                                                                                            of IP by European
+                                                                                                                                            developers.
+
+
+
+
+eu:topic:CREA-MEDIA- European    Creative     TV and       topic     CREA-MEDIA- CREA-MEDIA- UNKNOWN   OPEN     CREA-LS Lump sum grants         To increase the       Independent European NOT_S
+2027-TVONLINE-1      CommissionEurope       online content         2027-TVONLINE2027-                         CREA     for production of      capacity of           audiovisual production
+                               Programme    Animation                           TVONLINE-1                    Lump Sum animation works (one-audiovisual             companies
+                               (CREA)       projects                                                          Grants   off or series, min. 24 producers to
+                                                                                                                       minutes) intended for develop and
+                                                                                                                       linear and non-linear produce strong
+                                                                                                                       broadcasting,          projects with
+                                                                                                                       submitted by           significant potential
+                                                                                                                       independent            to circulate
+                                                                                                                       European audiovisual throughout Europe
+                                                                                                                       production companies and beyond, and to
+                                                                                                                       from MEDIA-            facilitate European
+                                                                                                                       participating          and international
+                                                                                                                       countries, with        co-productions
+                                                                                                                       cooperation between within the television
+                                                                                                                       broadcasters from at and online sector.
+                                                                                                                       least two such
+                                                                                                                       countries. Requested
+                                                                                                                       grant EUR 70,000–
+                                                                                                                       2,000,000 per project.
+eu:topic:CREA-MEDIA- European    Creative     TV and       topic       CREA-MEDIA- CREA-MEDIA- UNKNOWN   OPEN     CREA-LS Supports production To increase the           Independent European NOT_S
+2027-TVONLINE-2      CommissionEurope       online content           2027-TVONLINE2027-                         CREA     of creative            capacity of           audiovisual production
+                               Programme    Documentary                           TVONLINE-2                    Lump Sum documentaries (one- audiovisual              companies
+                               (CREA)       projects                                                            Grants   off or series, min. 50 producers to
+                                                                                                                         minutes) intended      develop and
+                                                                                                                         primarily for linear   produce strong
+                                                                                                                         and non-linear         projects with
+                                                                                                                         broadcasting, with     significant potential
+                                                                                                                         cooperation between to circulate
+                                                                                                                         operators from         throughout Europe
+                                                                                                                         different MEDIA        and beyond, and to
+                                                                                                                         Strand countries.      facilitate European
+                                                                                                                         Open to independent and international
+                                                                                                                         European audiovisual co-productions
+                                                                                                                         production             within the television
+                                                                                                                         companies. Lump        and online sector.
+                                                                                                                         sum grants of EUR
+                                                                                                                         70 000 to 2 000 000
+                                                                                                                         per project.
+
+
+
+
+eu:topic:CREA-MEDIA- European    Creative     TV and         topic     CREA-MEDIA- CREA-MEDIA- UNKNOWN   OPEN     CREA-LS The action supports To increase the          Independent European NOT_S
+2027-TVONLINE-3      CommissionEurope       online content           2027-TVONLINE2027-                         CREA     production of drama capacity of             audiovisual production
+                               Programme    Fiction projects                      TVONLINE-3                    Lump Sum films (one-off or     audiovisual           companies
+                               (CREA)                                                                           Grants   series) intended for producers to
+                                                                                                                         linear and non-linear develop and
+                                                                                                                         broadcasting, to      produce strong
+                                                                                                                         increase the capacity projects with
+                                                                                                                         of audiovisual        significant potential
+                                                                                                                         producers and         to circulate
+                                                                                                                         facilitate European   throughout Europe
+                                                                                                                         and international co- and beyond, and to
+                                                                                                                         productions in the TV facilitate European
+                                                                                                                         and online sector.    and international
+                                                                                                                         Applicants are        co-productions
+                                                                                                                         independent           within the television
+                                                                                                                         European audiovisual and online sector.
+                                                                                                                         production companies
+                                                                                                                         established in
+                                                                                                                         MEDIA-participating
+                                                                                                                         countries. Support is
+                                                                                                                         a lump sum grant of
+                                                                                                                         EUR 70 000 to 2 000
+                                                                                                                         000 per project.
+eu:topic:CREA-MEDIA- European    Creative     Audience     topic     CREA-MEDIA- CREA-MEDIA- UNKNOWN   OPEN     CREA-    EU action grants       to promote         Legal entities (public or NOT_S
+2027-AUDFILMEDU      CommissionEurope       Development            2027-        2027-                         PJG CREA under the Creative     European           private bodies); Single
+                               Programme    and Film               AUDFILMEDU AUDFILMEDU                      Project  Europe MEDIA strand audiovisual works, beneficiaries or consortia;
+                               (CREA)       Education                                                         Grants   for projects ensuring including heritage Creative Europe Desk
+                                                                                                                       pan-European           works, and support host organisations (under
+                                                                                                                       cooperation and        the engagement     conditions); International
+                                                                                                                       innovation in          and development of organisations
+                                                                                                                       audience               audiences of all
+                                                                                                                       development and film ages, in particular
+                                                                                                                       education, especially young audiences,
+                                                                                                                       targeting young        across Europe and
+                                                                                                                       audiences. Open to beyond.
+                                                                                                                       legal entities (public
+                                                                                                                       or private) established
+                                                                                                                       in eligible countries;
+                                                                                                                       single applicants or
+                                                                                                                       consortia. Topic
+                                                                                                                       budget is EUR
+                                                                                                                       7,000,000.
+
+
+
+
+eu:topic:CREA-MEDIA- European    Creative     European co- topic     CREA-MEDIA- CREA-MEDIA- UNKNOWN   OPEN     CREA-LS Lump sum grants        To support the     Independent European NOT_S
+2027-CODEV           CommissionEurope       development            2027-CODEV 2027-CODEV                      CREA     for development of a cooperation among audiovisual production
+                               Programme                                                                      Lump Sum single audiovisual    European           companies
+                               (CREA)                                                                         Grants   project (animation,   production
+                                                                                                                       creative documentary companies that are
+                                                                                                                       or fiction) co-       developing works
+                                                                                                                       developed by at least with a strong
+                                                                                                                       two independent       international
+                                                                                                                       European audiovisual audience potential.
+                                                                                                                       production companies
+                                                                                                                       under the MEDIA
+                                                                                                                       strand of Creative
+                                                                                                                       Europe. Aims to
+                                                                                                                       support cooperation
+                                                                                                                       among European
+                                                                                                                       production companies
+                                                                                                                       developing works with
+                                                                                                                       strong international
+                                                                                                                       audience potential.
+
+
+
+
+eu:topic:HORIZON-  European    Euratom      Key enabling topic       HORIZON-     HORIZON-   UNKNOWN   OPEN                Innovation action        To ensure a          public research        NOT_S
+EURATOM-2027-01-01 CommissionResearch and technologies             EURATOM-     EURATOM-                      EURATOM-maturing and                successful           organisations; private
+                             Training     for fusion               2027-01      2027-01-01                    IA         demonstrating (TRL transition to              companies (start-ups,
+                             Programme power plants                                                           EURATOM 6-8) innovative             commercially viable SMEs and industry)
+                             (EURATOM) (European                                                              Innovation components/systems fusion power plants,
+                                          Partnership on                                                      Actions    for fusion power         through a co-
+                                          Fusion Energy)                                                                 plants in one of three programmed public-
+                                                                                                                         key areas: plasma        private partnership
+                                                                                                                         heating and current maximising
+                                                                                                                         drive, high-             convergence of
+                                                                                                                         temperature              publicly funded
+                                                                                                                         superconducting          action and privately
+                                                                                                                         magnets, or              led initiatives;
+                                                                                                                         diagnostics and          actions mature and
+                                                                                                                         control. Indicative      demonstrate
+                                                                                                                         topic budget EUR 32 innovative
+                                                                                                                         million, around EUR technologies (TRL
+                                                                                                                         10 million per project. 6-8) for fusion
+                                                                                                                         Participation limited to power plants.
+                                                                                                                         legal entities
+                                                                                                                         established in
+                                                                                                                         Member States,
+                                                                                                                         Ukraine and
+                                                                                                                         Switzerland.
+tubitak:akademik/ulusal-TÜBİTAK      Akademik > 1001 -         programme UNKNOWN     UNKNOWN    1001                  UNKNOWN Program, yeni             Yeni bilgiler          Doktora veya eşdeğer      ELIG
+destek-                            Ulusal destek Bilimsel ve                                                 CLOSED          bilgiler üretilmesi,     üretilmesi, bilimsel   dereceli proje yürütücüleri
+programlari/1001-                  programları Teknolojik                                                                    bilimsel yorumların yorumların                  (yükseköğretim kurumları,
+bilimsel-ve-teknolojik-                          Araştırma                                                                   yapılması veya           yapılması veya         kamu kurumları, özel
+arastirma-projelerini-                           Projelerini                                                                 teknolojik               teknolojik             kuruluşlar); Emekliler ve
+destekleme-programi                              Destekleme                                                                  problemlerin             problemlerin           kurumda çalışmayan
+                                                 Programı                                                                    çözümlenmesi için        çözümlenmesi için      doktora sonrası
+                                                                                                                             bilimsel esaslara        bilimsel esaslara      araştırmacılar (PTİ
+                                                                                                                             uygun projeleri          uygun projelerin       almamak şartıyla);
+                                                                                                                             destekler. Proje         desteklenmesi.         KKTC'de yerleşik
+                                                                                                                             süresi en fazla 36 ay;                          üniversiteler
+                                                                                                                             2026 1. dönemi
+                                                                                                                             itibariyle destek üst
+                                                                                                                             limiti 3.000.000 TL'dir.
+                                                                                                                             Başvurular doktora
+                                                                                                                             derecesine sahip
+                                                                                                                             proje yürütücüleri
+                                                                                                                             tarafından
+                                                                                                                             yükseköğretim
+                                                                                                                             kurumları, kamu
+                                                                                                                             kurumları veya özel
+                                                                                                                             kuruluşlar üzerinden
+                                                                                                                             yapılır.
+
+
+tubitak:bilim-           TÜBİTAK     Bilim &       Bilim ve    programme UNKNOWN     UNKNOWN   NOT_SPECIFIED       UNKNOWN Bilim ve Toplum               Bilim ve Toplum         Bilim ve Toplum             CON
+toplum/ulusal-destek-              Toplum >      Toplum Destek                                              CLOSED        Başkanlığı tarafından        Başkanlığı              projelerinin yürütücü       [KOŞU
+programlari/bilim-ve-              Ulusal Destek Programları                                                              son üç yılda                 tarafından              kurum/kuruluşları (kamu     Türkiye
+toplum-destek-                     Programları Proje Teşvik                                                               desteklenen ve               desteklenen             kurumları, üniversiteler,   T.C. va
+programlari-proje-                               Ödülleri                                                                 başarıyla                    projelerin çıktılarını, belediyeler, bilim          kurumu
+tesvik-odulleri                                                                                                           tamamlanan 4004-             sonuçlarını ve          merkezleri)                 person
+                                                                                                                          4008 projeleri için          toplumsal etkisini
+                                                                                                                          yürütücü                     artırmak; proje
+                                                                                                                          kurum/kuruluşların           çıktılarının
+                                                                                                                          başvurduğu nakdi             sürdürülebilirliğini
+                                                                                                                          teşvik ödülleri. Her         sağlamak.
+                                                                                                                          kategoride birinciye
+                                                                                                                          100.000 TL, ikinciye
+                                                                                                                          50.000 TL, üçüncüye
+                                                                                                                          30.000 TL verilir;
+                                                                                                                          proje yürütücüsüne
+                                                                                                                          sertifika verilir.
+
+
+
+
+tubitak:bilimsel-        TÜBİTAK     Bilimsel       2224-C       programme UNKNOWN   UNKNOWN    2224-C                UNKNOWN Program,                 Başarılı öğrenci        Lisans öğrencileri;      UNKNO
+etkinlik/etkinliklere-             etkinlik >     Uluslararası                                               CLOSED          Türkiye’de              ve araştırmacıların     Yüksek lisans öğrencileri;
+katilma-destekleri/2224-           Etkinliklere   Anlaşmalar                                                                 lisans/lisansüstü       alanında temayüz        Doktora öğrencileri;
+c-uluslararasi-                    Katılma        Çerçevesinde                                                               eğitimine devam eden etmiş bilim                Doktora derecesine sahip
+anlasmalar-                        Destekleri     Yurt Dışındaki                                                             üstün başarılı          insanlarıyla bir        araştırmacılar
+cercevesinde-yurt-                                Bilimsel                                                                   öğrencilere ve          araya gelmeleri,
+disindaki-bilimsel-                               Etkinliklere                                                               doktora dereceli genç güncel bilimsel
+etkinliklere-katilimi-                            Katılımı                                                                   araştırmacılara         konuları ele
+destekleme-programi                               Destekleme                                                                 Lindau Nobel Ödüllü almaları ve sosyal
+                                                  Programı                                                                   Bilim İnsanları         ağlarını
+                                                                                                                             Toplantıları’na katılım genişletmeleri
+                                                                                                                             için destek verir.      amacıyla,
+                                                                                                                             Katılım ücreti,         TÜBİTAK’ın
+                                                                                                                             harcırah/konaklama uluslararası
+                                                                                                                             giderleri protokol      anlaşmaları
+                                                                                                                             koşullarına göre        çerçevesinde
+                                                                                                                             karşılanır; talep       belirlenen yurt dışı
+                                                                                                                             halinde uçak bileti     bilimsel etkinliklere
+                                                                                                                             TÜBİTAK tarafından katılımın
+                                                                                                                             sağlanır.               desteklenmesi.
+tubitak:sanayi/ulusal-   TÜBİTAK     Sanayi >      1812 -        programme UNKNOWN   UNKNOWN    1812                  UNKNOWN 1812 BiGG Yatırım Nitelikli                   Üniversite öğrencisi            ELIG
+destek-                            Ulusal Destek Yatırım Tabanlı                                             CLOSED          programı,                girişimciliğin      veya mezunu girişimciler
+programlari/1812-                  Programları Girişimcilik                                                                  girişimcilerin teknoloji özendirilmesi ve    (Aşama 1); Aşama 2'de
+yatirim-tabanli-                                 Destek                                                                      ve yenilik odaklı iş     uluslararası        girişimcinin kurucu ortak
+girisimcilik-destek-                             Programı                                                                    fikirlerini fikir        piyasalarda rekabet olduğu anonim şirketler;
+programi-bigg-yatirim                            (BiGG Yatırım)                                                              aşamasından pazara edebilen, yenilikçi, Aşama 3: tohum öncesi
+                                                                                                                             kadar destekler. Üç teknoloji düzeyi         yatırım almış veya 1512
+                                                                                                                             aşamadan oluşur:         yüksek ürün ve      projesini tamamlamış
+                                                                                                                             hızlandırma programı, süreçleri              şirketler
+                                                                                                                             tohum öncesi yatırım geliştirebilen
+                                                                                                                             ve tohum yatırım.        teknoloji tabanlı
+                                                                                                                             Aşama 2'de               başlangıç
+                                                                                                                             Mükemmeliyet Mührü firmalarının
+                                                                                                                             alan iş planları için    oluşturulması;
+                                                                                                                             kurulan şirkete          fonların
+                                                                                                                             TÜBİTAK BİGG Fonu yatırımlarının geri
+                                                                                                                             hisse karşılığı yatırım dönmesiyle
+                                                                                                                             yapar.                   desteğin
+                                                                                                                                                      ölçeklenmesi.
+tubitak:sanayi/ulusal- TÜBİTAK     Sanayi >     1711 - Yapay call   UNKNOWN   UNKNOWN   1711            UNKNOWN 1711-YZE-2026             Yapay zekâ         Müşteri Kuruluş (KOBİ   ELIG
+destek-                          Ulusal Destek Zekâ                                            CLOSED          çağrısı, yapay zekâ teknolojilerinin        veya büyük ölçekli
+programlari/1711-                Programları Ekosistem                                                         çözümlerine ihtiyaç müşteri kuruluşların sermaye şirketi); Teknoloji
+yapay-zeka-ekosistem-                          Çağrısı                                                         duyan müşteri            ihtiyaçları        sağlayıcı KOBİ ölçeğinde
+cagrisi                                                                                                        kuruluşların (KOBİ       doğrultusunda ürün sermaye şirketleri;
+                                                                                                               veya büyük ölçekli), ya da çözümlere        Üniversite araştırma
+                                                                                                               en az bir teknoloji      dönüştürülmesine laboratuvarları/merkezleri;
+                                                                                                               sağlayıcı KOBİ, en az katkı sağlamak ve Kamu araştırma
+                                                                                                               bir üniversite/kamu Türkiye Yapay Zekâmerkezleri/enstitüleri
+                                                                                                               araştırma merkezi ve Ekosistemini
+                                                                                                               TÜBİTAK Yapay Zekâharekete geçirmek.
+                                                                                                               Enstitüsü ile
+                                                                                                               oluşturduğu
+                                                                                                               konsorsiyumların Ar-
+                                                                                                               Ge projelerini hibe ile
+                                                                                                               destekler. Beş
+                                                                                                               öncelikli alan vardır;
+                                                                                                               azami süre 24 ay,
+                                                                                                               proje bütçesi üst sınırı
+                                                                                                               10 milyon TL'dir.
+

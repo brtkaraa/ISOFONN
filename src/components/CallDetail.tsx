@@ -1,21 +1,39 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   ArrowLeft, Landmark, Building2, Globe, Award, Calendar, Clock,
   CircleDollarSign, TrendingUp, CheckCircle2, FileText, ExternalLink,
   Upload, AlertCircle, X, Target, ListChecks, FileCheck,
-  Wallet, Ban, Info, Link2, Monitor,
+  Wallet, Ban, Info, Link2, Monitor, Plus, FolderOpen, Loader2,
 } from 'lucide-react';
-import { FUND_TYPE_LABELS, SECTORS, type Fund } from '@/lib/supabase';
+import { supabase, FUND_TYPE_LABELS, SECTORS, type Fund, type Project } from '@/lib/supabase';
 
 type Props = {
   fund: Fund;
   onBack: () => void;
   onApply: (fund: Fund) => void;
+  onApplyExisting?: (project: Project, fund: Fund) => void;
 };
 
-export default function CallDetail({ fund, onBack, onApply }: Props) {
+export default function CallDetail({ fund, onBack, onApply, onApplyExisting }: Props) {
   const [uploadedFiles, setUploadedFiles] = useState<string[]>([]);
   const [showUpload, setShowUpload] = useState(false);
+  const [showProjectPicker, setShowProjectPicker] = useState(false);
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [loadingProjects, setLoadingProjects] = useState(false);
+
+  useEffect(() => {
+    if (showProjectPicker && projects.length === 0 && !loadingProjects) {
+      setLoadingProjects(true);
+      supabase
+        .from('projects')
+        .select('*')
+        .order('created_at', { ascending: false })
+        .then(({ data }) => {
+          if (data) setProjects(data as Project[]);
+          setLoadingProjects(false);
+        });
+    }
+  }, [showProjectPicker, projects.length, loadingProjects]);
 
   const fundTypeIcons: Record<string, typeof Landmark> = {
     kamu: Landmark,
@@ -45,7 +63,6 @@ export default function CallDetail({ fund, onBack, onApply }: Props) {
     setUploadedFiles(uploadedFiles.filter((f) => f !== name));
   };
 
-  const uploadedSet = new Set(uploadedFiles);
   const allDocsUploaded = fund.required_docs.every((doc) =>
     uploadedFiles.some((f) => f.toLowerCase().includes(doc.toLowerCase().split(' ')[0]))
   );
@@ -324,24 +341,91 @@ export default function CallDetail({ fund, onBack, onApply }: Props) {
         )}
 
         {/* Actions */}
-        <div className="flex flex-col sm:flex-row gap-4">
-          <button
-            onClick={() => onApply(fund)}
-            className="flex-1 bg-[#ed1c24] hover:bg-[#c91018] text-white font-bold py-4 px-6 rounded-lg flex items-center justify-center gap-2 transition shadow-lg shadow-[#ed1c24]/20"
-          >
-            <FileText className="h-5 w-5" /> Bu Çağrı ile Başvuru Hazırla
-          </button>
-          {fund.application_url && (
-            <a
-              href={fund.application_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 bg-gray-800 hover:bg-gray-700 dark:bg-[#2a2a2a] dark:hover:bg-[#333] text-white font-bold py-4 px-6 rounded-lg flex items-center justify-center gap-2 transition"
+        {!showProjectPicker ? (
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button
+              onClick={() => onApply(fund)}
+              className="flex-1 bg-[#ed1c24] hover:bg-[#c91018] text-white font-bold py-4 px-6 rounded-lg flex items-center justify-center gap-2 transition shadow-lg shadow-[#ed1c24]/20"
             >
-              <ExternalLink className="h-5 w-5" /> Resmi Sayfaya Git
-            </a>
-          )}
-        </div>
+              <Plus className="h-5 w-5" /> Yeni Proje ile Başvur
+            </button>
+            {onApplyExisting && (
+              <button
+                onClick={() => setShowProjectPicker(true)}
+                className="flex-1 bg-white hover:bg-gray-50 dark:bg-[#2a2a2a] dark:hover:bg-[#333] text-[#181818] dark:text-gray-100 font-bold py-4 px-6 rounded-lg flex items-center justify-center gap-2 transition border-2 border-gray-200 dark:border-gray-700"
+              >
+                <FolderOpen className="h-5 w-5" /> Projemle Eşleştir
+              </button>
+            )}
+            {fund.application_url && (
+              <a
+                href={fund.application_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 bg-gray-800 hover:bg-gray-700 dark:bg-[#2a2a2a] dark:hover:bg-[#333] text-white font-bold py-4 px-6 rounded-lg flex items-center justify-center gap-2 transition"
+              >
+                <ExternalLink className="h-5 w-5" /> Resmi Sayfaya Git
+              </a>
+            )}
+          </div>
+        ) : (
+          <div className="bg-white dark:bg-[#1e1e1e] rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 p-6">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-lg font-bold flex items-center gap-2">
+                <FolderOpen className="h-5 w-5 text-[#ed1c24]" /> Proje Seçin
+              </h2>
+              <button
+                onClick={() => setShowProjectPicker(false)}
+                className="text-sm text-gray-500 hover:text-gray-800 dark:hover:text-gray-300 transition font-medium"
+              >
+                <X className="h-4 w-4 inline" /> İptal
+              </button>
+            </div>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Bu çağrıyı hangi projenizle eşleştirmek istersiniz?</p>
+            {loadingProjects ? (
+              <div className="flex items-center justify-center py-8"><Loader2 className="h-6 w-6 text-[#ed1c24] animate-spin" /></div>
+            ) : projects.length === 0 ? (
+              <div className="text-center py-8">
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Henüz projeniz yok. Yeni bir proje oluşturun.</p>
+                <button
+                  onClick={() => onApply(fund)}
+                  className="bg-[#ed1c24] hover:bg-[#c91018] text-white font-bold px-6 py-3 rounded-lg inline-flex items-center gap-2 transition"
+                >
+                  <Plus className="h-5 w-5" /> Yeni Proje Oluştur
+                </button>
+              </div>
+            ) : (
+              <div className="space-y-3 max-h-[400px] overflow-y-auto">
+                {projects.map((proj) => {
+                  const sector = SECTORS.find((s) => s.value === proj.sector);
+                  const trlMatch = proj.trl_level >= fund.min_trl && proj.trl_level <= fund.max_trl;
+                  const sectorMatch = fund.sectors.includes(proj.sector);
+                  return (
+                    <div
+                      key={proj.id}
+                      className="flex items-center gap-4 p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-[#ed1c24]/40 hover:bg-[#fbe8e9]/30 transition cursor-pointer"
+                      onClick={() => onApplyExisting?.(proj, fund)}
+                    >
+                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#fbe8e9] text-lg flex-shrink-0">
+                        {sector?.icon || '📦'}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-bold text-sm text-[#181818] dark:text-gray-100 truncate">{proj.title}</h4>
+                        <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-1">{proj.description}</p>
+                        <div className="flex items-center gap-2 mt-1">
+                          <span className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-2 py-0.5 rounded-full font-medium">TRL {proj.trl_level}</span>
+                          {trlMatch && <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium">TRL uyumlu</span>}
+                          {sectorMatch && <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium">Sektör uyumlu</span>}
+                        </div>
+                      </div>
+                      <ArrowRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Status note */}
         {uploadedFiles.length > 0 && !allDocsUploaded && (
