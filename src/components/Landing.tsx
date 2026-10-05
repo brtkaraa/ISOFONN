@@ -3,11 +3,12 @@ import {
   CheckCircle2, Menu, X, TrendingUp, Shield,
   Zap, Cpu, ChevronDown,
   Lightbulb, Handshake, CircleDollarSign, Radar, Landmark,
-  Moon, Sun,
+  Moon, Sun, Sparkles, ExternalLink,
 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { supabase, type Fund } from '@/lib/supabase';
 import BrandLogo from '@/components/BrandLogo';
+import { MOTOR_MODULES, motorUrl } from '@/lib/motor';
 
 type Props = {
   onStart: () => void;
@@ -161,6 +162,41 @@ export default function Landing({ onStart, onStartCompany, embedded = false, onN
 
       {/* RED DIVIDER */}
       <div className="h-1 bg-[#ed1c24]" />
+
+      {/* AKILLI EŞLEŞTİRME MOTORU - only after login */}
+      {embedded && (
+        <section className="bg-white dark:bg-[#1a1a1a] border-b border-gray-200 dark:border-gray-700 py-14 px-6 md:px-8">
+          <div className="max-w-7xl mx-auto grid gap-8 lg:grid-cols-[1.1fr_1fr] items-center">
+            <div>
+              <span className="inline-flex items-center gap-1.5 text-[#ed1c24] font-semibold text-sm uppercase tracking-wider">
+                <Sparkles className="h-4 w-4" /> Akıllı Eşleştirme Motoru
+              </span>
+              <h2 className="text-3xl md:text-4xl font-extrabold mt-2 mb-3 text-[#181818] dark:text-gray-100">Projenize en uygun fonu kurallarla bulun</h2>
+              <p className="text-gray-500 dark:text-gray-400 max-w-xl">
+                Kuruluşunuzu ve projenizi anlatın; motor her programın resmi şartlarına göre uygun olmayanları eler, kalanları 0–100 uyum skoruyla sıralar ve her kararın gerekçesini gösterir.
+              </p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {MOTOR_MODULES.map((m) => (
+                <a
+                  key={m.id}
+                  href={motorUrl(m.id)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col rounded-xl border border-gray-200 dark:border-gray-700 bg-[#f6f7f9] dark:bg-[#202020] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#ed1c24]/40 hover:shadow-[0_14px_32px_rgba(0,0,0,.09)]"
+                >
+                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-[#fbe8e9] text-[#d71920]"><Landmark className="h-5 w-5" /></div>
+                  <h3 className="text-lg font-extrabold text-[#202020] dark:text-gray-100">{m.label}</h3>
+                  <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">{m.description}</p>
+                  <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#ed1c24] transition group-hover:gap-2.5">
+                    Uyum analizini başlat <ExternalLink className="h-4 w-4" />
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* FONLAR - Dynamic fund showcase */}
       <section id="fonlar" className="scroll-mt-24 bg-[#f6f7f9] dark:bg-[#161616] border-b border-gray-200 dark:border-gray-700 py-16 px-6 md:px-8">

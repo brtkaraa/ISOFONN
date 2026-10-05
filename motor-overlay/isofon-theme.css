@@ -1,0 +1,122 @@
+/* =========================================================
+   İSOFON teması — motor arayüzünü (web_otomasyon) site renklerine uyarlar.
+   Yalnız public/motor/ kopyasına eklenir; Hackhaton'daki orijinal style.css değişmez.
+   Palet: kırmızı #ed1c24 (hover #c91018), açık ton #fbe8e9, metin #181818, zemin #f6f7f9
+   ========================================================= */
+
+:root {
+    --bg-page: #f6f7f9;
+    --bg-card-hover: #fffafa;
+    --bg-accent: #fbe8e9;
+
+    --border-focus: #ed1c24;
+
+    --text-primary: #181818;
+
+    --primary: #ed1c24;
+    --primary-hover: #c91018;
+    --primary-dim: rgba(237, 28, 36, 0.08);
+    --primary-border: rgba(237, 28, 36, 0.25);
+    --primary-light: #fbe8e9;
+
+    /* AI vurguları: sitedeki koyu (antrasit) ikincil renk */
+    --purple: #2a2a2a;
+    --purple-dim: rgba(24, 24, 24, 0.06);
+    --purple-border: rgba(24, 24, 24, 0.2);
+}
+
+body {
+    font-family: 'Inter', 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+/* ─── Logo ─── */
+.logo-icon {
+    background: #ed1c24;
+    box-shadow: 0 2px 4px rgba(237, 28, 36, 0.25);
+}
+
+/* ─── Sabit mavi/mor tonların kırmızı karşılıkları ─── */
+.form-section.section-ai {
+    background: linear-gradient(135deg, rgba(24, 24, 24, 0.02), rgba(237, 28, 36, 0.03));
+}
+
+.option-card.active .oc-tag,
+.link-official:hover {
+    background: rgba(237, 28, 36, 0.15);
+}
+
+.btn-primary {
+    box-shadow: 0 1px 3px rgba(237, 28, 36, 0.3);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 4px 6px -1px rgba(237, 28, 36, 0.3);
+}
+
+.btn-ai,
+.btn-chat-eu {
+    background: #181818;
+    box-shadow: 0 2px 6px -1px rgba(24, 24, 24, 0.3);
+}
+
+.btn-ai:hover,
+.btn-chat-eu:hover {
+    background: #2a2a2a;
+    box-shadow: 0 6px 16px -4px rgba(24, 24, 24, 0.4);
+}
+
+.orch-box {
+    background: linear-gradient(135deg, rgba(237, 28, 36, 0.04), rgba(24, 24, 24, 0.04));
+    border-color: rgba(237, 28, 36, 0.2);
+}
+
+.orch-step.active .orch-dot {
+    box-shadow: 0 0 0 3px rgba(237, 28, 36, 0.25);
+}
+
+.financial-box {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.06), rgba(237, 28, 36, 0.04));
+}
+
+/* eu_app.js'deki satır içi mavi "Kaskad / FSTP" rozeti dahil */
+.badge-info,
+.badge-info[style] {
+    background: rgba(237, 28, 36, 0.08) !important;
+    color: #c91018 !important;
+    border: 1px solid rgba(237, 28, 36, 0.25) !important;
+}
+
+/* ─── İSOFON'a dön bağlantısı (navbar sağ) ─── */
+.isofon-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #181818;
+    text-decoration: none;
+    background: #f6f7f9;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.isofon-back:hover {
+    color: #ffffff;
+    background: #ed1c24;
+    border-color: #ed1c24;
+}
+
+.isofon-back b {
+    font-weight: 800;
+}
+
+.isofon-back b i {
+    font-style: normal;
+    color: #ed1c24;
+}
+
+.isofon-back:hover b i {
+    color: #ffffff;
+}

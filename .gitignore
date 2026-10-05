@@ -21,3 +21,10 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Akıllı eşleştirme motoru kopyası (scripts/sync-motor.mjs üretir)
+public/motor
+
+# Dahili notlar/raporlar (README hariç md dosyaları GitHub'a yüklenmez)
+*.md
+!README.md

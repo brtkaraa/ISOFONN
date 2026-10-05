@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react';
 import {
   ArrowRight, ArrowLeft, Award, CheckCircle2, XCircle,
   TrendingUp, Building2, Globe, Landmark, FileText, Loader2, Target,
-  RefreshCw, Info,
+  RefreshCw, Info, Sparkles, ExternalLink,
 } from 'lucide-react';
 import { supabase, FUND_TYPE_LABELS, type Project, type Fund } from '@/lib/supabase';
+import { MOTOR_MODULES, motorUrl } from '@/lib/motor';
 
 type Props = {
   project: Project;
@@ -126,6 +127,32 @@ export default function FundMatching({ project, onBack, onGenerateDoc, onCreateR
           <div className="flex items-center gap-2 text-slate-300 font-semibold text-sm">
             <div className="w-8 h-8 rounded-full bg-slate-200 text-slate-400 flex items-center justify-center text-xs font-bold">3</div>
             Doküman
+          </div>
+        </div>
+
+        {/* Akıllı eşleştirme motoru bandı */}
+        <div className="mb-8 rounded-2xl border border-[#ed1c24]/25 bg-[#fbe8e9]/60 p-5 flex items-start gap-4 flex-wrap">
+          <div className="w-11 h-11 rounded-xl bg-[#ed1c24] flex items-center justify-center flex-shrink-0">
+            <Sparkles className="h-5 w-5 text-white" />
+          </div>
+          <div className="flex-1 min-w-[220px]">
+            <h3 className="font-bold text-[#181818]">Detaylı uygunluk analizi</h3>
+            <p className="text-sm text-slate-600 mt-1">
+              Aşağıdaki liste TRL ve sektöre dayalı ön taramadır. Kesin eleme kuralları, gerekçeli uyum skoru ve tahmini destek tutarı için akıllı eşleştirme motorunu açın.
+            </p>
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            {MOTOR_MODULES.map((m) => (
+              <a
+                key={m.id}
+                href={motorUrl(m.id)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-lg bg-[#ed1c24] hover:bg-[#c91018] px-4 py-2.5 text-sm font-bold text-white transition shadow-sm"
+              >
+                {m.label} <ExternalLink className="h-4 w-4" />
+              </a>
+            ))}
           </div>
         </div>
 
