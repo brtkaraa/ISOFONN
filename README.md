@@ -35,15 +35,26 @@ Tarayıcıda açın: **http://localhost:5173**
 
 Kapatmak için terminalde `Ctrl + C`. Sonraki seferlerde sadece `npm run dev` yeterli.
 
-## .env dosyası
+## .env dosyası (giriş yapabilmek için şart)
 
-Klasörde `.env` adında bir dosya olmalı. İçindeki değerleri **ekipten isteyin**. Bu dosya GitHub'a yüklenmez.
+Hesap/giriş sistemi Supabase'tedir. `.env` olmadan site açılır ama **giriş ve kayıt çalışmaz**.
+
+1. Klasördeki `.env.example` dosyasını kopyalayıp adını `.env` yapın.
+2. İçindeki değerleri **ekipten isteyin** ve doldurun.
+3. `npm run dev` çalışıyorsa kapatıp yeniden başlatın.
 
 ```env
 VITE_SUPABASE_URL=...
 VITE_SUPABASE_ANON_KEY=...
-GROQ_API_KEY=...
+GROQ_API_KEY=...   # isteğe bağlı (motorun yapay zeka açıklamaları)
 ```
+
+`.env` GitHub'a yüklenmez. Giriş için kendi hesabınızla **Kayıt Ol** diyebilirsiniz; başka birinin hesabını kullanacaksanız e-posta ve şifresini ondan alın.
+
+## Akıllı eşleştirme motoru
+
+Motor dosyaları `public/motor` klasöründe repoya dahildir, ek bir şey kurmanız gerekmez.
+Motorun asıl kaynağı ayrı bir projededir (Hackhaton/web_otomasyon); o klasörün olduğu bilgisayarda `npm run dev` kopyayı otomatik günceller, güncel hâli commit'lenmelidir.
 
 ## Kullanılan teknolojiler
 

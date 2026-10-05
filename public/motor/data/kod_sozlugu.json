@@ -1,0 +1,577 @@
+[
+  {
+    "alan_grubu": "BASVURAN_TIPI",
+    "kod": "SERMAYE_SIRKETI",
+    "aciklama": "Sermaye şirketi (A.Ş., Ltd. Şti. vb.)"
+  },
+  {
+    "alan_grubu": "BASVURAN_TIPI",
+    "kod": "GIRISIMCI_BIREYSEL",
+    "aciklama": "Bireysel girişimci (öğrenci / mezun)"
+  },
+  {
+    "alan_grubu": "BASVURAN_TIPI",
+    "kod": "UNIVERSITE_ARASTIRMA",
+    "aciklama": "Üniversite / araştırma kurumu / kamu araştırma merkezi"
+  },
+  {
+    "alan_grubu": "BASVURAN_TIPI",
+    "kod": "TTO_TGB",
+    "aciklama": "TTO / Teknoloji Geliştirme Bölgesi yönetici şirketi / araştırma altyapısı"
+  },
+  {
+    "alan_grubu": "BASVURAN_TIPI",
+    "kod": "ODA_BIRLIK_VAKIF",
+    "aciklama": "Oda / birlik / vakıf / dernek"
+  },
+  {
+    "alan_grubu": "BASVURAN_TIPI",
+    "kod": "KAMU_KURUMU",
+    "aciklama": "Diğer kamu kurumu"
+  },
+  {
+    "alan_grubu": "BASVURAN_TIPI",
+    "kod": "SAHIS_ISLETMESI",
+    "aciklama": "Şahıs işletmesi / gerçek kişi ticari işletme (bazı KOSGEB programlarında kabul edilir; TÜBİTAK sanayi destekleri genelde kabul etmez)"
+  },
+  {
+    "alan_grubu": "OLCEK",
+    "kod": "KOBI_ZORUNLU",
+    "aciklama": "Yalnızca KOBİ ölçeğindeki kuruluşlar başvurabilir"
+  },
+  {
+    "alan_grubu": "OLCEK",
+    "kod": "BUYUK_UYGUN",
+    "aciklama": "Fiilen büyük ölçekli kuruluşlara uygun (KOBİ resmi olarak yasak değil ama şartlar büyük ölçeği gerektiriyor)"
+  },
+  {
+    "alan_grubu": "OLCEK",
+    "kod": "KOBI_VE_BUYUK",
+    "aciklama": "Hem KOBİ hem büyük ölçekli başvurabilir (oran/limit farklı olabilir)"
+  },
+  {
+    "alan_grubu": "OLCEK",
+    "kod": "FARKETMEZ",
+    "aciklama": "Ölçek başvuru için belirleyici değil"
+  },
+  {
+    "alan_grubu": "OLCEK",
+    "kod": "BILINMIYOR",
+    "aciklama": "Kaynakta açıkça belirtilmemiş"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "ARGE_URUN_SUREC",
+    "aciklama": "Yeni ürün / süreç / üretim teknolojisi Ar-Ge projesi"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "YESIL_DONUSUM",
+    "aciklama": "Yeşil dönüşüm / çevresel sürdürülebilirlik odaklı proje"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "YAPAY_ZEKA",
+    "aciklama": "Yapay zekâ ürün/çözüm geliştirme projesi"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "PATENT_TEKNOLOJI_TRANSFERI",
+    "aciklama": "Üniversiteden/araştırma kurumundan patent tabanlı teknoloji transferi projesi"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "PATENT_BASVURUSU",
+    "aciklama": "Patent başvurusu/tescili/vekil desteği (proje değil, patent süreci desteği)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "GIRISIMCILIK_YATIRIM",
+    "aciklama": "Girişimcilik fikri / yatırım tabanlı erken aşama şirket"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "ULUSLARARASI_ORTAKLI_ARGE",
+    "aciklama": "Yabancı ortaklı uluslararası Ar-Ge/yenilik projesi"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "SIPARISE_DAYALI",
+    "aciklama": "Büyük/başka bir firmanın siparişine dayalı Ar-Ge projesi (tedarikçi tarafı)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "ETKINLIK_PROJE_PAZARI",
+    "aciklama": "Üniversite-sanayi eşleştirme etkinliği / proje pazarı organizasyonu"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "TTO_PERSONEL_ISTIHDAM",
+    "aciklama": "TTO'da teknoloji transferi profesyoneli istihdamı"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "TTO_KURUMSAL_KAPASITE",
+    "aciklama": "TTO kurumsal kapasite geliştirme / performansa dayalı büyüme"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "ARGE_LABORATUVARI_KURULUMU",
+    "aciklama": "Türkiye'de öncül/büyük ölçekli Ar-Ge laboratuvarı kurulumu ve işletilmesi"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "KAPASITE_ARTIRMA_PROGRAMI",
+    "aciklama": "Girişimcilik/yenilik ekosistemi kapasite artırma programı (çağrıya özel içerik)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "BIGG_UYGULAYICI_KURULUS",
+    "aciklama": "Bireysel girişimcileri hızlandıracak uygulayıcı kuruluş olma (kuruluşun kendisi başvurur, girişimci değil)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "DEGERLENDIRME_IZLEME_HIZMETI",
+    "aciklama": "Ar-Ge projesinin bağımsız değerlendirilmesi/izlenmesi (mali destek içermez, ücretli hizmet)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "SEYAHAT_DESTEGI",
+    "aciklama": "Uluslararası konsorsiyum kurma amaçlı seyahat desteği"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "KOORDINATORLUK_DESTEGI",
+    "aciklama": "Uluslararası (Eurostars) projede koordinatör olma hazırlık desteği"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "GIRISIMCILIK_HIBE_ASAMA1",
+    "aciklama": "Girişimcilik iş fikri geliştirme - 1. aşama hibe (henüz şirketleşmemiş)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "MENTORLUK_IS_GELISTIRME",
+    "aciklama": "Program mezunu girişimlere mentorluk / iş geliştirme desteği"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "COK_ORTAKLI_YENILIK_AGI",
+    "aciklama": "Sanayi-üniversite çok ortaklı yenilik ağı / konsorsiyum (şemsiye mekanizma)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "IS_KURMA_DESTEGI",
+    "aciklama": "Yeni işletme kurma / kuruluş gideri desteği"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "GIRISIMCILIK_HIBE_KREDI_PAKETI",
+    "aciklama": "Girişimcilik eğitimi sonrası hibe + faizsiz kredi paketi"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "KOBI_GELISIM_PROJESI",
+    "aciklama": "KOBİ'nin üretim/kapasite/teknoloji gelişim projesi"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "BUYUME_YATIRIM_KREDISI",
+    "aciklama": "Büyüme/dijitalleşme yatırımı için kredi + faiz desteği"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "IHRACAT_ULUSLARARASILASMA",
+    "aciklama": "İhracat / uluslararası pazarlama / e-ticaret altyapısı desteği"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "ENDUSTRIYEL_TASARIM",
+    "aciklama": "Endüstriyel tasarım / ürün-marka geliştirme projesi"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "EGITIM_DANISMANLIK",
+    "aciklama": "Eğitim, kurumsal danışmanlık ve mentorluk hizmeti"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "AB_ARASTIRMA_YENILIK_GENEL",
+    "aciklama": "Horizon Europe genel araştırma-yenilik projesi (destinasyona/çağrıya göre değişir)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "AB_DIJITAL_ENDUSTRI_UZAY",
+    "aciklama": "Dijital teknoloji, ileri üretim, malzeme, uzay araştırma-inovasyon projesi (Cluster 4)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "AB_EIC_OLCEKLENDIRME",
+    "aciklama": "Çığır açıcı yenilik / deep-tech ölçeklendirme (Pathfinder / Transition / Accelerator)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "AB_ARASTIRMACI_HAREKETLILIGI",
+    "aciklama": "Araştırmacı eğitimi, doktora ağları, personel değişimi (MSCA)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "AB_DIJITAL_YAYGINLASTIRMA",
+    "aciklama": "Yapay zekâ, siber güvenlik, dijital beceri ve altyapının yaygınlaştırılması (Digital Europe)"
+  },
+  {
+    "alan_grubu": "DESTEK_TURU",
+    "kod": "HIBE",
+    "aciklama": "Geri ödemesiz hibe"
+  },
+  {
+    "alan_grubu": "DESTEK_TURU",
+    "kod": "GERI_ODEMELI",
+    "aciklama": "Kısmen/tamamen geri ödemeli destek (bir kısmı koşullu hibeye dönüşebilir)"
+  },
+  {
+    "alan_grubu": "DESTEK_TURU",
+    "kod": "YATIRIM",
+    "aciklama": "Öz sermaye / hisse karşılığı yatırım"
+  },
+  {
+    "alan_grubu": "DESTEK_TURU",
+    "kod": "HIZMET",
+    "aciklama": "Mali destek değil; ücretli değerlendirme/danışmanlık hizmeti"
+  },
+  {
+    "alan_grubu": "DESTEK_TURU",
+    "kod": "KREDI_FAIZ_DESTEGI",
+    "aciklama": "Geri ödemeli kredi + faiz/finansman desteği (hibe değildir)"
+  },
+  {
+    "alan_grubu": "DESTEK_TURU",
+    "kod": "KARMA",
+    "aciklama": "Birden fazla destek türünün bileşimi (ör. hibe+kredi veya hibe+öz sermaye yatırımı) — ayrıntı Özel Koşul Notu'nda"
+  },
+  {
+    "alan_grubu": "UNIVERSITE_ARASTIRMA_ORTAK_GEREKLI / ORTAKLI_BASVURU_ZORUNLU / ULUSLARARASI_ORTAK_GEREKLI",
+    "kod": "EVET",
+    "aciklama": "Zorunlu"
+  },
+  {
+    "alan_grubu": "UNIVERSITE_ARASTIRMA_ORTAK_GEREKLI / ORTAKLI_BASVURU_ZORUNLU / ULUSLARARASI_ORTAK_GEREKLI",
+    "kod": "HAYIR",
+    "aciklama": "Aranmıyor / zorunlu değil"
+  },
+  {
+    "alan_grubu": "UNIVERSITE_ARASTIRMA_ORTAK_GEREKLI / ORTAKLI_BASVURU_ZORUNLU / ULUSLARARASI_ORTAK_GEREKLI",
+    "kod": "OPSIYONEL",
+    "aciklama": "Zorunlu değil ama başvuruda yer alabilir / avantaj olabilir"
+  },
+  {
+    "alan_grubu": "CAGRI_MODELI",
+    "kod": "SUREKLI_ACIK",
+    "aciklama": "Belirli bir çağrı dönemi yok, yıl boyunca başvurulabilir"
+  },
+  {
+    "alan_grubu": "CAGRI_MODELI",
+    "kod": "DONEMSEL_CAGRI",
+    "aciklama": "Yılda birkaç kez tekrar eden düzenli çağrı dönemleri var, şu an biri açık"
+  },
+  {
+    "alan_grubu": "CAGRI_MODELI",
+    "kod": "CAGRIYA_BAGLI",
+    "aciklama": "Yalnızca ilgili çağrı duyurusu yayımlandığında başvuru alınır, düzenli takvimi yok"
+  },
+  {
+    "alan_grubu": "CAGRI_MODELI",
+    "kod": "CAGRI_BEKLENIYOR",
+    "aciklama": "Program var ama şu an ilan edilmiş bir çağrı yok, duyuru bekleniyor"
+  },
+  {
+    "alan_grubu": "CAGRI_MODELI",
+    "kod": "KAPALI_YENI_CAGRI_BEKLENIYOR",
+    "aciklama": "Bilinen son çağrı kapandı, yeni çağrı duyurusu bekleniyor"
+  },
+  {
+    "alan_grubu": "CAGRI_MODELI",
+    "kod": "BILGI_YOK",
+    "aciklama": "Çağrı modeli kaynakta belirtilmemiş"
+  },
+  {
+    "alan_grubu": "OLCEK",
+    "kod": "ORTA_VE_BUYUK_YURUTUCU",
+    "aciklama": "v2: Yürütücü orta veya büyük ölçekli olmalı; mikro/küçük KOBİ yalnız ortak olabilir (1833)."
+  },
+  {
+    "alan_grubu": "THS_KURAL_TIPI",
+    "kod": "HARD",
+    "aciklama": "Resmi çağrıda sayısal THS eşiği var → hard filtre uygula."
+  },
+  {
+    "alan_grubu": "THS_KURAL_TIPI",
+    "kod": "TURETILMIS",
+    "aciklama": "Sayısal eşik yok; resmi ret gerekçesinden türetilmiş UYARI (eleme yok)."
+  },
+  {
+    "alan_grubu": "THS_KURAL_TIPI",
+    "kod": "YOK",
+    "aciklama": "Resmi belgede THS şartı yok → THS ile eleme/puanlama yapma."
+  },
+  {
+    "alan_grubu": "THS_KURAL_TIPI",
+    "kod": "UYGULANMAZ",
+    "aciklama": "Program proje THS'si değerlendirmez (hizmet/kurumsal/patent süreci)."
+  },
+  {
+    "alan_grubu": "THS_KURAL_TIPI",
+    "kod": "BILINMIYOR",
+    "aciklama": "Çağrıya göre değişir / taranmadı."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "ZORUNLU_TEMA",
+    "aciklama": "Proje konusu bu tema olmak zorunda (hard filter)."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "ZORUNLU_ONKOSUL",
+    "aciklama": "Belirli bir durum/varlık ön şart (hard filter)."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "PUAN",
+    "aciklama": "Hakem/kurul puanına sayısal ek puan (soft score; KADIN_PUAN vb. sütunda değer)."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "ORAN_ARTISI",
+    "aciklama": "Destek ORANINA yüzde puan eklenir (1702)."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "ORAN_DEGISIR",
+    "aciklama": "Geçmiş proje sayısına göre destek oranı değişir (1501, 1509, 1513, 1613)."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "KOTA",
+    "aciklama": "Yararlanma sayısı sınırı (1507 ilk 5, 1831 max 3, 1602 yıllık)."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "ENGEL",
+    "aciklama": "Belirli geçmiş destek başvuruyu ENGELLER (1812)."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "TEMA_SECENEGI",
+    "aciklama": "Tema kabul edilen seçeneklerden biri; zorunlu değil, puan yok."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "BONUS_HARIC",
+    "aciklama": "Tema başvurabilir ama öncelikli alan bonusundan açıkça HARİÇ (yeşil: 1501/1507/1707)."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "NITEL_DEGERLENDIRME",
+    "aciklama": "Hakem nitel olarak dikkate alır; sayısal puan yok → yalnız öneri metni."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "YOK_RESMI",
+    "aciklama": "Bu turda okunan resmi belgede etki YOK → UI'de \"avantaj\" olarak gösterme."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "UYGULAYICI_KRITERI",
+    "aciklama": "Kriter başvuran kurum (uygulayıcı) içindir, son kullanıcıya doğrudan etki etmez."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "BILINMIYOR",
+    "aciklama": "Taranmadı/bulunamadı → eleme ve puan yapma."
+  },
+  {
+    "alan_grubu": "*_ETKI_KODU",
+    "kod": "UYGULANMAZ",
+    "aciklama": "Boyut bu program türü için anlamsız."
+  },
+  {
+    "alan_grubu": "UNIVERSITE_ORTAK_KODU",
+    "kod": "ZORUNLU",
+    "aciklama": "Üniversite/kamu araştırma kurumu ortaklığı şart (1505, 1711, 1503 etkinlik)."
+  },
+  {
+    "alan_grubu": "UNIVERSITE_ORTAK_KODU",
+    "kod": "ZORUNLU_KURUM_TURU",
+    "aciklama": "Belirli kurum türlerinden biri şart; üniversite şart değil (1702: TGB şirketi de olur)."
+  },
+  {
+    "alan_grubu": "UNIVERSITE_ORTAK_KODU",
+    "kod": "ONERILIR",
+    "aciklama": "Resmi metinde \"önerilir\"; zorunlu değil (1833)."
+  },
+  {
+    "alan_grubu": "UNIVERSITE_ORTAK_KODU",
+    "kod": "OPSIYONEL",
+    "aciklama": "Olabilir; etkisi yok veya nitel."
+  },
+  {
+    "alan_grubu": "UNIVERSITE_ORTAK_KODU",
+    "kod": "HIZMET_ALIMI",
+    "aciklama": "Ortak olamaz; yalnızca hizmet alımı olarak dahil edilebilir (1707)."
+  },
+  {
+    "alan_grubu": "UNIVERSITE_ORTAK_KODU",
+    "kod": "BASVURAN_KENDISI",
+    "aciklama": "Başvuran zaten üniversite/TTO."
+  },
+  {
+    "alan_grubu": "UNIVERSITE_ORTAK_KODU",
+    "kod": "YASAK",
+    "aciklama": "Üniversite/kamu ortak olamaz (1701)."
+  },
+  {
+    "alan_grubu": "UNIVERSITE_ORTAK_KODU",
+    "kod": "YOK",
+    "aciklama": "Ortaklık kavramı yok veya ortaklı başvuru kabul edilmez (1831)."
+  },
+  {
+    "alan_grubu": "DOGRULAMA_DUZEYI_V2",
+    "kod": "RESMI_CAGRI_METNI",
+    "aciklama": "v2 turunda güncel çağrı metni/duyurusu okundu."
+  },
+  {
+    "alan_grubu": "DOGRULAMA_DUZEYI_V2",
+    "kod": "RESMI_UYGULAMA_ESASLARI",
+    "aciklama": "v2 turunda güncel uygulama esasları okundu."
+  },
+  {
+    "alan_grubu": "DOGRULAMA_DUZEYI_V2",
+    "kod": "ONCEKI_TUR",
+    "aciklama": "Önceki turda resmi kaynaktan alındı; v2'de bu boyutlar için yeniden okunmadı."
+  },
+  {
+    "alan_grubu": "DOGRULAMA_DUZEYI_V2",
+    "kod": "TARANMADI",
+    "aciklama": "Resmi belge okunmadı."
+  },
+  {
+    "alan_grubu": "ONCELIKLI_BASLIK (F15)",
+    "kod": "ENDUSTRIDE_TEKNOLOJIK_SICRAMA",
+    "aciklama": "1501/1507/1707 +5"
+  },
+  {
+    "alan_grubu": "ONCELIKLI_BASLIK (F15)",
+    "kod": "DIJITAL_LIDERLIK",
+    "aciklama": "1501/1507/1707 +5"
+  },
+  {
+    "alan_grubu": "ONCELIKLI_BASLIK (F15)",
+    "kod": "YESIL_DONUSUM",
+    "aciklama": "+5 YOK (hariç); 1832/1833/1831 yönlendir"
+  },
+  {
+    "alan_grubu": "ONCELIKLI_BASLIK (F15)",
+    "kod": "HICBIRI / BILMIYORUM",
+    "aciklama": "Bonus yok / hesaplama yapma"
+  },
+  {
+    "alan_grubu": "PATENT_DURUMU (F41)",
+    "kod": "YOK / TR_BASVURU / PCT_WIPO / TR_TESCIL / IP5_TESCIL / LISANS_ALINACAK",
+    "aciklama": "IP5_TESCIL = EPO, JPO, KIPO, CNIPA veya USPTO tescili (1702 +%10)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "YESIL_MENTORLUK",
+    "aciklama": "v3: Yeşil mevzuat uyumu danışmanlık/teknik yardım (1831; Ar-Ge değil)"
+  },
+  {
+    "alan_grubu": "PROJE_TURU",
+    "kod": "GIRISIM_SERMAYESI_FONU",
+    "aciklama": "v3: TTO/TGB/araştırma altyapısının girişim sermayesi fonuna katılımı (1514)"
+  },
+  {
+    "alan_grubu": "*_KURALI (YAS/SURE/BUTCE/ORAN)",
+    "kod": "VAR",
+    "aciklama": "Sayısal kural var; ilgili sayısal sütunları uygula"
+  },
+  {
+    "alan_grubu": "*_KURALI",
+    "kod": "OLCEGE_GORE",
+    "aciklama": "Ölçeğe göre değişen değerler Grup C sütunlarında"
+  },
+  {
+    "alan_grubu": "*_KURALI",
+    "kod": "YALNIZ_DESTEK_TAVANI",
+    "aciklama": "Proje bütçesine sınır yok; yalnız TÜBİTAK katkısı sınırlı → eleme yok, uyarı"
+  },
+  {
+    "alan_grubu": "*_KURALI",
+    "kod": "CAGRIYA_BAGLI",
+    "aciklama": "Değer çağrı duyurusunda; eleme yapma, çağrı linki göster"
+  },
+  {
+    "alan_grubu": "*_KURALI",
+    "kod": "FORMUL",
+    "aciklama": "Oran bonuslarla hesaplanır (1702)"
+  },
+  {
+    "alan_grubu": "*_KURALI",
+    "kod": "SABIT_TUTAR",
+    "aciklama": "Oran yerine sabit tutar/kalem"
+  },
+  {
+    "alan_grubu": "Genel hücre değeri",
+    "kod": "YOK / YOK_RESMI",
+    "aciklama": "Okunan resmi belgede böyle bir şart/etki yok → eleme ve puan yok"
+  },
+  {
+    "alan_grubu": "Genel hücre değeri",
+    "kod": "BILINMIYOR",
+    "aciklama": "Kaynak bulunamadı → eleme yapma, \"teyit edin\" uyarısı"
+  },
+  {
+    "alan_grubu": "Genel hücre değeri",
+    "kod": "UYGULANMAZ",
+    "aciklama": "Boyut bu program türünde anlamsız; \"UYGULANMAZ (…)\" açıklamalı metin ölçek için ELE demektir (ör. 1501 büyük)"
+  },
+  {
+    "alan_grubu": "SEKTOR (F06 ↔ SEKTOR_KOD_UYGUN)",
+    "kod": "TUMU / IMALAT / YAZILIM_BILISIM / SAVUNMA_SANAYI / ENERJI / TARIM_GIDA / SAGLIK / CEVRE_YESIL / YAPAY_ZEKA / DIGER",
+    "aciklama": "F06 seçenek kodları. 1812 temaları: AKILLI_ULASIM, AKILLI_URETIM, ENERJI_TEMIZ_TEKNOLOJI, ILETISIM_SAYISAL_DONUSUM, SAGLIK, SURDURULEBILIR_TARIM"
+  },
+  {
+    "alan_grubu": "KURUM TÜRÜ (F54)",
+    "kod": "YUKSEKOGRETIM / EGITIM_ARASTIRMA_HASTANESI / ARASTIRMA_ALTYAPISI / KAMU_ARASTIRMA_MERKEZI / KAMU_KURUMU / TTO / TGB_SERMAYE_SIRKETI / YOK",
+    "aciklama": "UNIVERSITE_KURUM_TURLERI_UYGUN değerleri"
+  },
+  {
+    "alan_grubu": "PATENT (F41)",
+    "kod": "YOK / TR_BASVURU / PCT_WIPO / TR_TESCIL / IP5_TESCIL / LISANS_ALINACAK",
+    "aciklama": "PATENT_DURUMU_UYGUN değerleri"
+  },
+  {
+    "alan_grubu": "YZ ALANI (F38)",
+    "kod": "AKILLI_URETIM / AKILLI_TARIM_GIDA_HAYVANCILIK / FINANS_TEKNOLOJILERI / IKLIM_SURDURULEBILIRLIK / AKILLI_EGITIM / DIGER_YZ / YZ_DEGIL",
+    "aciklama": "YZ_ALAN_UYGUN değerleri"
+  },
+  {
+    "alan_grubu": "YEŞİL KONU (F35)",
+    "kod": "IKLIM_DEGISIKLIGI / DONGUSEL_EKONOMI / TEMIZ_ENERJI / SURDURULEBILIR_TARIM / AKILLI_ULASIM / DIGER",
+    "aciklama": "YESIL_KONU_UYGUN değerleri"
+  },
+  {
+    "alan_grubu": "KADIN_KRITER_KODU",
+    "kod": "HISSEDAR50_VEYA_YONETICI50",
+    "aciklama": "1832/1833: kadın hissedar payı ≥%50 VEYA üst düzey kadın yönetici ≥%50"
+  },
+  {
+    "alan_grubu": "KADIN_KRITER_KODU",
+    "kod": "YETKILI_VEYA_SERMAYE_COGUNLUK_VEYA_CALISAN_COGUNLUK",
+    "aciklama": "1831: yetkili kadın VEYA sermaye >%50 kadın VEYA çalışan >%50 kadın"
+  },
+  {
+    "alan_grubu": "ONCELIKLI_BASLIK (F15)",
+    "kod": "ETS / DL / YD",
+    "aciklama": "Endüstride Teknolojik Sıçrama / Dijital Liderlik / Yeşil Dönüşüm"
+  }
+]

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F8 | TÜBİTAK Fon Karar Destek Sistemi · İSOFON</title>
+    <meta name="description"
+        content="TÜBİTAK sanayi ve Ar-Ge hibe programlarına uygunluğunuzu analiz eden karar destek ve akıllı eşleştirme platformu.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=8">
+    <link rel="stylesheet" href="isofon-theme.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%23ed1c24%22/%3E%3Ctext x=%2216%22 y=%2224%22 font-family=%22Arial%22 font-weight=%22800%22 font-size=%2220%22 fill=%22white%22 text-anchor=%22middle%22%3E%C4%B0%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon">F8</div>
+            <div class="logo-content">
+                <span class="logo-text">F8</span>
+                <span class="logo-sub">TÜBİTAK Fon Karar Destek Sistemi</span>
+            </div>
+        </div>
+        <div class="navbar-center" style="display: flex; gap: 1rem; align-items: center;">
+            <a href="index.html" style="text-decoration: none; font-weight: bold; color: var(--primary);">TÜBİTAK Fonları</a>
+            <a href="eu.html" style="text-decoration: none; color: var(--text-muted); font-weight: 500;">AB Fonları</a>
+        </div>
+        <div class="navbar-right">
+            <a class="isofon-back" href="../" title="İSOFON ana sayfasına dön"><span>←</span><span><b>İSO<i>FON</i></b>'a dön</span></a>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <!-- SOL PANEL: FORM -->
+        <aside class="input-panel">
+
+            <div id="loading-state" class="loading-overlay">
+                <div class="spinner"></div>
+                <p>TÜBİTAK fon kural matrisi yükleniyor...</p>
+            </div>
+
+            <div id="input-container" class="hidden">
+
+                <!-- YAPAY ZEKA SERBEST METİN ALANI -->
+                <div class="form-section section-ai">
+                    <div class="section-badge">Yapay Zeka Destekli Giriş</div>
+                    <h3>Projenizi Serbestçe Anlatın</h3>
+                    <p class="section-desc">Şirket profilinizi ve proje fikrinizi doğal dille özetleyin. Karar motoru
+                        metni analiz ederek parametreleri otomatik belirler.</p>
+                    <textarea id="llm-story-input" class="form-control" rows="4"
+                        placeholder="Örnek: 4 yıllık bir yazılım KOBİ'siyiz. İmalat sanayisinde enerji verimliliği için yapay zeka tabanlı bir izleme sistemi geliştiriyoruz. Çalışan prototipimiz (TRL 5) hazır. Bütçe ihtiyacımız yaklaşık 3 milyon TL. Projeye bir üniversite ortağı dahil etmeyi planlıyoruz. Kadın kurucu ortağımız bulunuyor."></textarea>
+                    <div class="preset-scenarios">
+                        <span class="preset-label">Örnek Senaryo:</span>
+                        <button type="button" class="btn-preset" data-preset="kobi_yz">KOBİ (Yapay Zeka)</button>
+                        <button type="button" class="btn-preset" data-preset="buyuk_yesil">Büyük İşletme (Yeşil Dönüşüm)</button>
+                        <button type="button" class="btn-preset" data-preset="girisimci_bigg">Bireysel Girişimci (BİGG)</button>
+                    </div>
+                    <button type="button" id="btn-llm-extract" class="btn btn-ai">
+                        <span id="llm-btn-text">Metni Analiz Et ve Formu Doldur</span>
+                        <div id="llm-btn-loading" class="hidden loading-dots"><span></span><span></span><span></span>
+                        </div>
+                    </button>
+                    <div id="llm-parsed-preview" class="llm-preview hidden"></div>
+                </div>
+
+                <div class="divider"><span>VEYA KRİTERLERİ KENDİNİZ SEÇİN</span></div>
+
+                <form id="profile-form">
+
+                    <!-- SORU 1: Kuruluş Yapısı -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">1</span>
+                            <div>
+                                <h3>Başvuran Kuruluş Niteliği</h3>
+                                <p class="section-desc">TÜBİTAK çağrıları şirket ölçeğine ve tüzel yapıya göre ayrılır.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="option-grid" id="q_company_type_group" data-name="q_company_type">
+                            <label class="option-card active" data-value="kobi_kucuk">
+                                <span class="oc-tag">KOBİ</span>
+                                <span class="oc-label">Mikro / Küçük KOBİ</span>
+                                <span class="oc-sub">&lt;50 çalışan veya &lt;50M TL ciro</span>
+                            </label>
+                            <label class="option-card" data-value="kobi_orta">
+                                <span class="oc-tag">KOBİ</span>
+                                <span class="oc-label">Orta Ölçekli KOBİ</span>
+                                <span class="oc-sub">50-249 çalışan veya 50-250M TL</span>
+                            </label>
+                            <label class="option-card" data-value="buyuk">
+                                <span class="oc-tag">BÜYÜK</span>
+                                <span class="oc-label">Büyük Ölçekli İşletme</span>
+                                <span class="oc-sub">250+ çalışan</span>
+                            </label>
+                            <label class="option-card" data-value="akademi">
+                                <span class="oc-tag">AKADEMİ</span>
+                                <span class="oc-label">Üniversite / Araştırma</span>
+                                <span class="oc-sub">Yükseköğretim ve araştırma merkezi</span>
+                            </label>
+                            <label class="option-card" data-value="girisimci">
+                                <span class="oc-tag">GİRİŞİM</span>
+                                <span class="oc-label">Bireysel Girişimci</span>
+                                <span class="oc-sub">Henüz şirketleşmemiş / Startup adayı</span>
+                            </label>
+                            <label class="option-card" data-value="oda_birlik">
+                                <span class="oc-tag">KURUMSAL</span>
+                                <span class="oc-label">Oda / Birlik / Vakıf</span>
+                                <span class="oc-sub">Sanayi, ticaret odaları ve birlikler</span>
+                            </label>
+                        </div>
+                        <input type="hidden" name="q_company_type" value="kobi_kucuk">
+                    </div>
+
+                    <!-- Dinamik: Büyük şirket KOBİ ortağı -->
+                    <div id="dynamic-q-kobi" class="form-section dynamic-section hidden">
+                        <div class="section-badge badge-warning">Dinamik Koşul</div>
+                        <h3>Konsorsiyumda KOBİ Ortağı Var mı?</h3>
+                        <p class="section-desc">Büyük ölçekli kuruluşların KOBİ ile birlikte başvurduğu modellerde bazı
+                            özel TÜBİTAK programları (1509, 1707 vb.) açık hale gelir.</p>
+                        <div class="option-grid two-col" id="q_dynamic_kobi_group" data-name="q_dynamic_kobi">
+                            <label class="option-card active" data-value="hayir">Hayır, tek başına başvuru</label>
+                            <label class="option-card" data-value="evet">Evet, KOBİ konsorsiyum ortağı mevcut</label>
+                        </div>
+                        <input type="hidden" name="q_dynamic_kobi" value="hayir">
+                    </div>
+
+                    <!-- SORU 2: Proje Türü / Amaç -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">2</span>
+                            <div>
+                                <h3>Proje Türü ve Teknoloji Odakları</h3>
+                                <p class="section-desc">Birden fazla alan seçebilirsiniz. Tematik öncelikler puanı
+                                    doğrudan etkiler.</p>
+                            </div>
+                        </div>
+                        <div class="checkbox-grid">
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_arge" value="1">
+                                <span class="check-custom"></span>
+                                <span>Yeni Ürün / Süreç Ar-Ge Geliştirme</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_yz" value="1">
+                                <span class="check-custom"></span>
+                                <span>Yapay Zekâ ve İleri Dijital Teknolojiler</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_yesil" value="1">
+                                <span class="check-custom"></span>
+                                <span>Yeşil Dönüşüm, Enerji ve Karbon Azaltımı</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_sanayiarge" value="1">
+                                <span class="check-custom"></span>
+                                <span>Endüstriyel Üretim ve Sanayi İyileştirmeleri</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_patent" value="1">
+                                <span class="check-custom"></span>
+                                <span>Patent Tabanlı Teknoloji Transferi</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_uluslararasi" value="1">
+                                <span class="check-custom"></span>
+                                <span>Uluslararası Ortaklı Proje (Eureka, Eurostars)</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_unisanayi" value="1">
+                                <span class="check-custom"></span>
+                                <span>Üniversite – Sanayi Ortak Araştırması</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_ticarilestirme" value="1">
+                                <span class="check-custom"></span>
+                                <span>Pazara Giriş ve Ticarileştirme Odaklı</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- SORU 3: Proje Aşaması (TRL) -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">3</span>
+                            <div>
+                                <h3>Teknoloji Hazırlık Seviyesi (TRL)</h3>
+                                <p class="section-desc">Mevcut başlangıç olgunluk düzeyiniz.</p>
+                            </div>
+                        </div>
+                        <div class="option-grid" id="q_trl_group" data-name="q_trl">
+                            <label class="option-card" data-value="2">
+                                <span class="oc-tag">TRL 1-3</span>
+                                <span class="oc-label">Fikir ve Kavram</span>
+                                <span class="oc-sub">Temel ve uygulamalı araştırma</span>
+                            </label>
+                            <label class="option-card active" data-value="5">
+                                <span class="oc-tag">TRL 4-5</span>
+                                <span class="oc-label">Laboratuvar Prototipi</span>
+                                <span class="oc-sub">Bileşen doğrulama aşaması</span>
+                            </label>
+                            <label class="option-card" data-value="6">
+                                <span class="oc-tag">TRL 6-7</span>
+                                <span class="oc-label">Saha Testi / Demo</span>
+                                <span class="oc-sub">Operasyonel ortamda çalışan prototip</span>
+                            </label>
+                            <label class="option-card" data-value="8">
+                                <span class="oc-tag">TRL 8-9</span>
+                                <span class="oc-label">Ticarileşme Öncesi</span>
+                                <span class="oc-sub">Sertifikasyon ve seri üretim hazırlığı</span>
+                            </label>
+                            <label class="option-card unsure" data-value="unsure">
+                                <span class="oc-tag">BİLİNMİYOR</span>
+                                <span class="oc-label">Emin Değilim</span>
+                                <span class="oc-sub">Değerlendirme genel yapılır</span>
+                            </label>
+                        </div>
+                        <input type="hidden" name="q_trl" value="5">
+                    </div>
+
+                    <!-- SORU 4: Bütçe -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">4</span>
+                            <div>
+                                <h3>Tahmini Toplam Proje Bütçesi</h3>
+                                <p class="section-desc">Programların alt ve üst hibe sınırlarıyla eşleştirilir.</p>
+                            </div>
+                        </div>
+                        <div class="option-grid two-col" id="q_budget_group" data-name="q_budget">
+                            <label class="option-card" data-value="500000">500.000 TL altı</label>
+                            <label class="option-card active" data-value="2000000">500.000 – 3.000.000 TL</label>
+                            <label class="option-card" data-value="7000000">3.000.000 – 10.000.000 TL</label>
+                            <label class="option-card" data-value="15000000">10.000.000 TL üzeri</label>
+                            <label class="option-card unsure" data-value="unsure">Bütçe Henüz Belirlenmedi</label>
+                        </div>
+                        <input type="hidden" name="q_budget" value="2000000">
+                    </div>
+
+                    <!-- SORU 5: Ortaklık -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">5</span>
+                            <div>
+                                <h3>Ortaklık ve Konsorsiyum Yapısı</h3>
+                                <p class="section-desc">Tek başına başvuru veya işbirlikleri.</p>
+                            </div>
+                        </div>
+                        <div class="option-grid two-col" id="q_partnership_group" data-name="q_partnership">
+                            <label class="option-card active" data-value="tek">Tek Başına Başvuru</label>
+                            <label class="option-card" data-value="sirket">Yerli Şirket Ortağı ile</label>
+                            <label class="option-card" data-value="akademi">Üniversite / Araştırma Kurumu ile</label>
+                            <label class="option-card" data-value="yabanci">Uluslararası Yabancı Ortak ile</label>
+                            <label class="option-card unsure" data-value="unsure">Henüz Kararlaştırılmadı</label>
+                        </div>
+                        <input type="hidden" name="q_partnership" value="tek">
+                    </div>
+
+                    <!-- SORU 6: Önceki TÜBİTAK Deneyimi -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">6</span>
+                            <div>
+                                <h3>Kurumsal TÜBİTAK Geçmişi</h3>
+                                <p class="section-desc">Kota ve başvuru kısıtları için gereklidir.</p>
+                            </div>
+                        </div>
+                        <div class="option-grid two-col" id="q_prev_tubitak_group" data-name="q_prev_tubitak">
+                            <label class="option-card active" data-value="yok">İlk Kez Başvuruyoruz</label>
+                            <label class="option-card" data-value="var_basarili">Daha Önce Başarıyla Tamamlanan Proje
+                                Var</label>
+                            <label class="option-card" data-value="var_devam">Halen Yürütülen Aktif Proje Var</label>
+                            <label class="option-card" data-value="var_reddedildi">Daha Önce Reddedilen Başvuru
+                                Var</label>
+                        </div>
+                        <input type="hidden" name="q_prev_tubitak" value="yok">
+                    </div>
+
+                    <!-- SORU 7: Avantajlar -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">7</span>
+                            <div>
+                                <h3>Özel Teşvikler ve Firma Nitelikleri</h3>
+                                <p class="section-desc">Mevzuatta yer alan ek puan ve öncelik kriterleri.</p>
+                            </div>
+                        </div>
+                        <div class="checkbox-grid">
+                            <label class="check-card">
+                                <input type="checkbox" name="q_bonus_woman" value="yes">
+                                <span class="check-custom"></span>
+                                <span>Kadın Kurucu Ortak veya Üst Düzey Yönetici Payı (%50+)</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_bonus_earthquake" value="yes">
+                                <span class="check-custom"></span>
+                                <span>Deprem Bölgesinde Yerleşik İşletme</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_bonus_priority" value="yes">
+                                <span class="check-custom"></span>
+                                <span>TÜBİTAK Öncelikli Ar-Ge Alanı Kapsamında Proje</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_bonus_patent" value="yes">
+                                <span class="check-custom"></span>
+                                <span>Şirket Adına Tescilli Patent veya Faydalı Model</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_bonus_ihracat" value="yes">
+                                <span class="check-custom"></span>
+                                <span>Aktif İhracat Yapan veya İhracat Hedefleyen İşletme</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_bonus_genc" value="yes">
+                                <span class="check-custom"></span>
+                                <span>Genç Girişimci Firma (Kuruluş yaşı 3 yıldan az)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="button" id="btn-analyze" class="btn btn-primary btn-full">
+                        Eşleştirme Analizini Gerçekleştir
+                    </button>
+                </form>
+            </div>
+        </aside>
+
+        <!-- SAĞ PANEL: RAPOR -->
+        <main class="output-panel">
+            <div class="panel-header">
+                <div>
+                    <h2>Program Uyumluluk Raporu</h2>
+                    <p class="panel-sub">İki aşamalı kural motoru tarafından filtrelenen ve puanlanan çağrılar.</p>
+                </div>
+                <div class="panel-header-right">
+                    <span id="report-status" class="badge badge-pending">Girdi Bekleniyor</span>
+                    <div id="export-buttons" class="export-actions hidden">
+                        <button type="button" id="btn-copy-report" class="btn btn-sm btn-outline" title="Özet Raporu Panoya Kopyala">
+                            📋 Özeti Kopyala
+                        </button>
+                        <button type="button" id="btn-print-report" class="btn btn-sm btn-outline" title="Yazdır / PDF Olarak Kaydet">
+                            🖨️ Yazdır / PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="empty-report" class="report-empty">
+                <div class="empty-badge">F8 MOTORU HAZIR</div>
+                <h3>Analiz İçin Profil Belirtin</h3>
+                <p>Soldaki kriterleri seçerek ya da projenizi serbest metin olarak yazarak analizi
+                    başlatabilirsiniz.<br>
+                    Sistem tüm TÜBİTAK sanayi programlarını eleme ve puanlama süzgecinden geçirerek sonuçları sıralar.
+                </p>
+
+                <div class="empty-features-grid">
+                    <div class="feature-item">
+                        <div class="feature-title">Kesin Eleme (Hard Eligibility)</div>
+                        <div class="feature-desc">Ölçek, konsorsiyum ve TRL sınırlarını denetler. Uymayan çağrıları
+                            güvenle eler.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Açıklanabilir Uyum Skoru (Fit Score)</div>
+                        <div class="feature-desc">0-100 aralığında puan üretir ve eksilen puanların nedenini şeffafça
+                            açıklar.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Program Danışmanı (AI Asistan)</div>
+                        <div class="feature-desc">Özel koşullar ve başvuru takvimi hakkında anlık soru-cevap imkanı
+                            sunar.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="analysis-report" class="hidden">
+                <div id="summary-stats" class="report-summary"></div>
+
+                <div class="report-section">
+                    <div class="section-title-wrap">
+                        <h3 class="section-title">En Uyumlu Fon Programları (Öne Çıkanlar)</h3>
+                        <span class="section-badge-info">En Yüksek Skorlu 5 Program</span>
+                    </div>
+                    <div id="matches-list"></div>
+                </div>
+
+                <div id="rest-section" class="hidden report-section">
+                    <button id="btn-show-rest" class="btn btn-secondary btn-full">
+                        Diğer Uygun Programları Listele
+                    </button>
+                    <div id="rest-list" class="hidden"></div>
+                </div>
+
+                <div class="report-section">
+                    <div class="section-title-wrap">
+                        <h3 class="section-title">Başvuru Koşullarını Karşılamayan Programlar</h3>
+                        <span class="section-badge-muted">Ön Elemeye Takılanlar</span>
+                    </div>
+                    <p class="section-hint">Bu programlar kuruluş ölçeği, ortaklık şartı veya TRL uyumsuzluğu gibi kesin
+                        kriterler nedeniyle elenmiştir.</p>
+                    <div id="ineligible-list"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- LLM CHAT MODAL (ÇOKLU AI ORKESTRASYONLU) -->
+    <div id="llm-chat-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <span class="modal-tag">ÇOKLU AI ORKESTRASYONU</span>
+                    <div>
+                        <h3 id="chat-title">Program Danışmanı</h3>
+                        <p id="chat-subtitle">Mevzuat + Finans Uzmanları · Baş Danışman Sentezi</p>
+                    </div>
+                </div>
+                <button id="close-chat" class="btn-close" aria-label="Kapat">&times;</button>
+            </div>
+            <div class="modal-body" id="chat-history"></div>
+            <div class="modal-chips">
+                <span class="chips-label">Hızlı Sorular:</span>
+                <button type="button" class="btn-chip" data-q="Bu programa kimler başvurabilir, uygun kuruluş şartları nelerdir?">Kimler başvurabilir?</button>
+                <button type="button" class="btn-chip" data-q="Destek üst bütçe limiti ve hibe oranı ne kadardır?">Bütçe & Destek Oranı</button>
+                <button type="button" class="btn-chip" data-q="Ortaklık veya üniversite şartı zorunlu mudur?">Ortaklık Zorunlu mu?</button>
+            </div>
+            <div class="modal-footer">
+                <input type="text" id="chat-input" class="form-control" placeholder="Bu çağrının koşulları hakkında soru sorun... (Enter)">
+                <button id="btn-send-chat" class="btn btn-primary">Danış</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast-notification" class="toast hidden"></div>
+
+    <script src="isofon-bridge.js"></script>
+
+    <script src="env.js?v=9"></script>
+    <script src="engine.js?v=9"></script>
+    <script src="app.js?v=9"></script>
+</body>
+
+</html>

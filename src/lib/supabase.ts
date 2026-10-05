@@ -3,6 +3,9 @@ import { createClient } from '@supabase/supabase-js';
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://dummy.supabase.co';
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'dummy';
 
+// .env yoksa istemci sahte adrese bağlanır ve giriş/kayıt sessizce başarısız olur
+export const isSupabaseConfigured = !!import.meta.env.VITE_SUPABASE_URL && !!import.meta.env.VITE_SUPABASE_ANON_KEY;
+
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export type Project = {

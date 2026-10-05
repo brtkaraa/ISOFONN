@@ -1,5 +1,8 @@
 // ─── Akıllı eşleştirme motorunu siteye kopyalar ───
-// Kaynak: Hackhaton/web_otomasyon (değiştirilmez)  →  Hedef: public/motor (git'e girmez, her dev/build'de yeniden üretilir)
+// Kaynak: Hackhaton/web_otomasyon (değiştirilmez)  →  Hedef: public/motor (her dev/build'de yeniden üretilir)
+//
+// public/motor git'e DAHİLDİR: Hackhaton klasörü olmayan ekip arkadaşları repodaki kopyayı kullanır.
+// Motor güncellendiğinde kaynağın olduğu makinede npm run dev/build çalıştırıp public/motor'u commit'leyin.
 //
 // Kopyaya eklenenler:
 //   • isofon-theme.css  — motor arayüzünü İSOFON renklerine uyarlar
@@ -34,7 +37,7 @@ function inject(html, page, pattern, replacement, what) {
 
 if (!existsSync(SOURCE)) {
     if (existsSync(TARGET)) {
-        console.warn(`[sync-motor] Kaynak bulunamadı (${SOURCE}); mevcut public/motor kopyası kullanılacak.`);
+        console.log('[sync-motor] Hackhaton klasörü bu bilgisayarda yok; repodaki public/motor kopyası kullanılıyor.');
     } else {
         console.warn(`[sync-motor] UYARI: Kaynak bulunamadı (${SOURCE}). Akıllı eşleştirme motoru siteye eklenmedi.`);
     }

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ArrowRight, Loader2, Mail, Lock, User, Building2, ChevronLeft } from 'lucide-react';
 import BrandLogo from '@/components/BrandLogo';
-import { supabase } from '@/lib/supabase';
+import { supabase, isSupabaseConfigured } from '@/lib/supabase';
 
 type Props = {
   onAuthSuccess: () => void;
@@ -16,6 +16,10 @@ export default function AuthScreen({ onAuthSuccess, onBack }: Props) {
   const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async () => {
+    if (!isSupabaseConfigured) {
+      setError('Supabase bağlantısı tanımlı değil: proje klasöründe .env dosyası yok veya eksik. .env.example dosyasını .env olarak kopyalayıp değerleri doldurun, sonra npm run dev komutunu yeniden başlatın.');
+      return;
+    }
     if (!email.trim() || !password.trim()) {
       setError('Lütfen e-posta ve şifre alanlarını doldurun.');
       return;
@@ -43,6 +47,10 @@ export default function AuthScreen({ onAuthSuccess, onBack }: Props) {
         setError('E-posta veya şifre hatalı.');
       } else if (message.includes('already registered') || message.includes('User already registered')) {
         setError('Bu e-posta adresi zaten kayıtlı. Giriş yapmayı deneyin.');
+      } else if (message.includes('Email not confirmed')) {
+        setError('E-posta adresiniz henüz doğrulanmamış.');
+      } else if (message.includes('Failed to fetch') || message.includes('NetworkError')) {
+        setError('Sunucuya ulaşılamadı. İnternet bağlantınızı ve .env dosyasındaki Supabase adresini kontrol edin.');
       } else if (message.includes('Email rate limit')) {
         setError('Çok fazla deneme yapıldı. Lütfen biraz bekleyin.');
       } else {

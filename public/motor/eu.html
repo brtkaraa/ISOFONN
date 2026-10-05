@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F8 | AB Fonları Karar Destek Sistemi · İSOFON</title>
+    <meta name="description"
+        content="AB sanayi ve Ar-Ge hibe programlarına uygunluğunuzu analiz eden karar destek ve akıllı eşleştirme platformu.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=8">
+    <link rel="stylesheet" href="eu.css?v=1">
+    <link rel="stylesheet" href="isofon-theme.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%23ed1c24%22/%3E%3Ctext x=%2216%22 y=%2224%22 font-family=%22Arial%22 font-weight=%22800%22 font-size=%2220%22 fill=%22white%22 text-anchor=%22middle%22%3E%C4%B0%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon">F8</div>
+            <div class="logo-content">
+                <span class="logo-text">F8</span>
+                <span class="logo-sub">AB Fonları Karar Destek Sistemi</span>
+            </div>
+        </div>
+        <div class="navbar-center" style="display: flex; gap: 1rem; align-items: center;">
+            <a href="index.html" style="text-decoration: none; color: var(--text-muted); font-weight: 500;">TÜBİTAK Fonları</a>
+            <a href="eu.html" style="text-decoration: none; font-weight: bold; color: var(--primary);">AB Fonları</a>
+        </div>
+        <div class="navbar-right">
+            <a class="isofon-back" href="../" title="İSOFON ana sayfasına dön"><span>←</span><span><b>İSO<i>FON</i></b>'a dön</span></a></div>
+    </header>
+
+    <div class="dashboard-container">
+        <!-- SOL PANEL: FORM -->
+        <aside class="input-panel">
+
+            <div id="loading-state" class="loading-overlay">
+                <div class="spinner"></div>
+                <p>AB fon kural matrisi yükleniyor...</p>
+            </div>
+
+            <div id="input-container" class="hidden">
+
+                <!-- YAPAY ZEKA SERBEST METİN ALANI -->
+                <div class="form-section section-ai">
+                    <div class="section-badge">Yapay Zeka Destekli Giriş</div>
+                    <h3>Projenizi Serbestçe Anlatın</h3>
+                    <p class="section-desc">Şirket profilinizi ve proje fikrinizi doğal dille özetleyin. Karar motoru
+                        metni analiz ederek parametreleri otomatik belirler.</p>
+                    <textarea id="llm-story-input" class="form-control" rows="4"
+                        placeholder="Örnek: 4 yıllık bir yazılım KOBİ'siyiz. İmalat sanayisinde enerji verimliliği için yapay zeka tabanlı bir izleme sistemi geliştiriyoruz. Çalışan prototipimiz (TRL 5) hazır. Bütçe ihtiyacımız yaklaşık 1.5 milyon EUR. Çok uluslu konsorsiyum ortakları arıyoruz."></textarea>
+                    <div class="preset-scenarios">
+                        <span class="preset-label">Örnek Senaryo:</span>
+                        <button type="button" class="btn-preset" data-preset="eu_cyber">KOBİ Siber & YZ (Eurostars / Eureka)</button>
+                        <button type="button" class="btn-preset" data-preset="eu_quantum">Derin Teknoloji & Kuantum (EuroHPC)</button>
+                        <button type="button" class="btn-preset" data-preset="eu_woman">Kadın İnovatör Ödülü (EIC)</button>
+                        <button type="button" class="btn-preset" data-preset="eu_widening">Ekosistem & Genişleme (Widening)</button>
+                    </div>
+                    <button type="button" id="btn-llm-extract" class="btn btn-ai">
+                        <span id="llm-btn-text">Metni Analiz Et ve Formu Doldur</span>
+                        <div id="llm-btn-loading" class="hidden loading-dots"><span></span><span></span><span></span></div>
+                    </button>
+                    <div id="llm-parsed-preview" class="llm-preview hidden"></div>
+                </div>
+
+                <div class="divider"><span>VEYA KRİTERLERİ KENDİNİZ SEÇİN</span></div>
+
+                <form id="profile-form">
+
+                    <!-- SORU 1: Kuruluş Merkezi ve Ülke Statüsü -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">1</span>
+                            <div>
+                                <h3>Kuruluş Merkezi ve Ülke Statüsü</h3>
+                                <p class="section-desc">AB fonlarında uygunluk, tüzel kişiliğin kurulduğu ülkeye ve asosiye statüsüne bağlıdır.</p>
+                            </div>
+                        </div>
+                        <div class="option-grid" id="q_country_status_group" data-name="q_country_status">
+                            <label class="option-card active" data-value="tr">
+                                <span class="oc-tag">ASOSİYE</span>
+                                <span class="oc-label">Türkiye'de Yerleşik</span>
+                                <span class="oc-sub">Ufuk Avrupa & DEP Asosiye Ülke Statüsü</span>
+                            </label>
+                            <label class="option-card" data-value="eu">
+                                <span class="oc-tag">ÜYE DEVLET</span>
+                                <span class="oc-label">AB Üyesi Ülkede Yerleşik</span>
+                                <span class="oc-sub">EU Member State tüzel kişiliği</span>
+                            </label>
+                            <label class="option-card" data-value="third">
+                                <span class="oc-tag">3. ÜLKE</span>
+                                <span class="oc-label">Diğer Üçüncü Ülke</span>
+                                <span class="oc-sub">Non-associated third country</span>
+                            </label>
+                            <label class="option-card" data-value="individual_woman">
+                                <span class="oc-tag">BİREYSEL</span>
+                                <span class="oc-label">Bireysel Kadın Girişimci</span>
+                                <span class="oc-sub">Doğal Kişi Başvurusu (EIC Ödülü vb.)</span>
+                            </label>
+                        </div>
+                        <input type="hidden" name="q_country_status" value="tr">
+                    </div>
+
+                    <!-- SORU 2: Kuruluş Yapısı -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">2</span>
+                            <div>
+                                <h3>Başvuran Kuruluş Niteliği (Target Applicant)</h3>
+                                <p class="section-desc">Çağrının hedef kitlesi (KOBİ, Büyük Şirket, Akademi, Kamu veya Medya).</p>
+                            </div>
+                        </div>
+                        <div class="option-grid" id="q_company_type_group" data-name="q_company_type">
+                            <label class="option-card active" data-value="sme">
+                                <span class="oc-tag">KOBİ</span>
+                                <span class="oc-label">KOBİ / Derin Teknoloji Start-up</span>
+                                <span class="oc-sub">&lt;250 çalışan, &lt;50M EUR ciro</span>
+                            </label>
+                            <label class="option-card" data-value="large">
+                                <span class="oc-tag">BÜYÜK</span>
+                                <span class="oc-label">Büyük Ölçekli Sanayi Kuruluşu</span>
+                                <span class="oc-sub">250+ çalışan</span>
+                            </label>
+                            <label class="option-card" data-value="university">
+                                <span class="oc-tag">ÜNİVERSİTE</span>
+                                <span class="oc-label">Üniversite / Yükseköğretim</span>
+                                <span class="oc-sub">Fakülte, Araştırma Lab.</span>
+                            </label>
+                            <label class="option-card" data-value="rto">
+                                <span class="oc-tag">RTO</span>
+                                <span class="oc-label">Araştırma Enstitüsü (RTO)</span>
+                                <span class="oc-sub">Kamu/Özel Ar-Ge Merkezi</span>
+                            </label>
+                            <label class="option-card" data-value="public">
+                                <span class="oc-tag">KAMU</span>
+                                <span class="oc-label">Kamu Kurumu / Yerel Yönetim</span>
+                                <span class="oc-sub">Bakanlık, Belediye, Emniyet</span>
+                            </label>
+                            <label class="option-card" data-value="ngo">
+                                <span class="oc-tag">STK</span>
+                                <span class="oc-label">STK / Sosyal Ortak</span>
+                                <span class="oc-sub">Dernek, Vakıf, Sendika</span>
+                            </label>
+                            <label class="option-card" data-value="media">
+                                <span class="oc-tag">MEDYA</span>
+                                <span class="oc-label">Medya / Görsel-İşitsel / Oyun</span>
+                                <span class="oc-sub">Video oyunu, film prodüksiyonu</span>
+                            </label>
+                            <label class="option-card" data-value="ncc">
+                                <span class="oc-tag">NCC</span>
+                                <span class="oc-label">Ulusal Koordinasyon Merkezi (NCC)</span>
+                                <span class="oc-sub">Komisyonca Yetkilendirilmiş Merkez</span>
+                            </label>
+                        </div>
+                        <input type="hidden" name="q_company_type" value="sme">
+                    </div>
+
+                    <!-- SORU 3: Konsorsiyum ve Ortaklık -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">3</span>
+                            <div>
+                                <h3>Konsorsiyum ve Ortaklık Durumu</h3>
+                                <p class="section-desc">Ufuk Avrupa projelerinde genel kural en az 3 farklı ülkeden ortaklı konsorsiyumdur.</p>
+                            </div>
+                        </div>
+                        <div class="option-grid two-col" id="q_partnership_group" data-name="q_partnership">
+                            <label class="option-card active" data-value="consortium_min3">
+                                <span class="oc-tag">3+ ÜLKE</span>
+                                <span class="oc-label">Uluslararası Konsorsiyum Hazır/Kurulabilir</span>
+                                <span class="oc-sub">En az 3 farklı AB / Asosiye ülkeden bağımsız ortak</span>
+                            </label>
+                            <label class="option-card" data-value="single">
+                                <span class="oc-tag">TEK BAŞINA</span>
+                                <span class="oc-label">Tek Başına Başvuru (Mono-beneficiary)</span>
+                                <span class="oc-sub">Konsorsiyumsuz başvuru (ERC, EIC Ödül, Basit Hibe)</span>
+                            </label>
+                            <label class="option-card" data-value="widening_2">
+                                <span class="oc-tag">WIDENING</span>
+                                <span class="oc-label">Bölgesel Ekosistem (Excellence Hubs)</span>
+                                <span class="oc-sub">En az 2 farklı Genişleme ülkesi ekosistemi</span>
+                            </label>
+                            <label class="option-card" data-value="partner_only">
+                                <span class="oc-tag">ORTAK ARAYAN</span>
+                                <span class="oc-label">Mevcut Bir Konsorsiyuma Ortak Olmak İstiyorum</span>
+                                <span class="oc-sub">Koordinatör olmadan partner/tedarikçi olarak katılım</span>
+                            </label>
+                        </div>
+                        <input type="hidden" name="q_partnership" value="consortium_min3">
+                    </div>
+
+                    <!-- SORU 4: Destek Türü (Type of Action) -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">4</span>
+                            <div>
+                                <h3>Proje Niteliği ve Eylem Türü (Type of Action)</h3>
+                                <p class="section-desc">Ufuk Avrupa ve AB programlarında olgunluk (TRL) ve hibe oranına göre eylem türleri.</p>
+                            </div>
+                        </div>
+                        <div class="option-grid" id="q_action_type_group" data-name="q_action_type">
+                            <label class="option-card active" data-value="all">
+                                <span class="oc-tag">TÜMÜ</span>
+                                <span class="oc-label">Tüm Eylem Türlerini İncele</span>
+                                <span class="oc-sub">Filtre uygulamadan çağrıları tara</span>
+                            </label>
+                            <label class="option-card" data-value="ria">
+                                <span class="oc-tag">RIA %100</span>
+                                <span class="oc-label">Araştırma ve Yenilik (RIA)</span>
+                                <span class="oc-sub">Düşük TRL 3-5, %100 tam hibe</span>
+                            </label>
+                            <label class="option-card" data-value="ia">
+                                <span class="oc-tag">IA %70</span>
+                                <span class="oc-label">Yenilik Eylemi (IA)</span>
+                                <span class="oc-sub">TRL 6-8, prototip, demo, pazara yakın</span>
+                            </label>
+                            <label class="option-card" data-value="csa">
+                                <span class="oc-tag">CSA %100</span>
+                                <span class="oc-label">Koordinasyon & Destek (CSA)</span>
+                                <span class="oc-sub">Ekosistem, ağ kurma, standartlaşma</span>
+                            </label>
+                            <label class="option-card" data-value="sme_support">
+                                <span class="oc-tag">DEP SME %75</span>
+                                <span class="oc-label">KOBİ Doğrudan Destek</span>
+                                <span class="oc-sub">Dijital Avrupa KOBİ siber güvenlik hibesi</span>
+                            </label>
+                            <label class="option-card" data-value="erc">
+                                <span class="oc-tag">ERC %100</span>
+                                <span class="oc-label">ERC Mükemmeliyet Araştırması</span>
+                                <span class="oc-sub">Öncül temel bilim, bireysel araştırmacı</span>
+                            </label>
+                            <label class="option-card" data-value="prize">
+                                <span class="oc-tag">ÖDÜL</span>
+                                <span class="oc-label">Tanıma Ödülü (Recognition Prize)</span>
+                                <span class="oc-sub">EIC Kadın İnovatör Ödülleri</span>
+                            </label>
+                        </div>
+                        <input type="hidden" name="q_action_type" value="all">
+                    </div>
+
+                    <!-- SORU 5: Tematik Alanlar -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">5</span>
+                            <div>
+                                <h3>Tematik Odak ve Kümeler (Clusters & Themes)</h3>
+                                <p class="section-desc">Projenizin faaliyet gösterdiği AB stratejik alanları (birden fazla seçilebilir).</p>
+                            </div>
+                        </div>
+                        <div class="checkbox-grid">
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_quantum" value="quantum">
+                                <span class="check-custom"></span>
+                                <span>Kuantum, Süper Bilgisayarlar & EuroHPC</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_cyber_ai" value="cyber_ai" checked>
+                                <span class="check-custom"></span>
+                                <span>Siber Güvenlik, Yapay Zekâ, Veri & Bulut (DEP ECCC)</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_climate_energy" value="climate_energy">
+                                <span class="check-custom"></span>
+                                <span>İklim, Temiz Enerji, Batarya & Füzyon (Cluster 5 / Euratom)</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_health" value="health">
+                                <span class="check-custom"></span>
+                                <span>Sağlık, Yaşam Bilimleri & Tıbbi Teknolojiler (Cluster 1)</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_agri_food" value="agri_food">
+                                <span class="check-custom"></span>
+                                <span>Tarım, Gıda, Çevre & Döngüsel Biyoekonomi (Cluster 6)</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_widening" value="widening">
+                                <span class="check-custom"></span>
+                                <span>Bölgesel Yenilik Ekosistemleri & Genişleme (Widening)</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_creative" value="creative">
+                                <span class="check-custom"></span>
+                                <span>Yaratıcı İçerik, Medya, Sinema, Oyun & XR (Creative Europe)</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_social" value="social">
+                                <span class="check-custom"></span>
+                                <span>Sosyal Haklar, Çalışma Hayatı & Kapsayıcılık (ESF+ / SOCPL)</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_theme_security" value="security">
+                                <span class="check-custom"></span>
+                                <span>Sivil Güvenlik, Emniyet & Siber Suçlar (ISF)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- SORU 6: Bütçe -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">6</span>
+                            <div>
+                                <h3>Talep Edilen Proje Bütçesi (EUR)</h3>
+                                <p class="section-desc">AB fonlarında bütçeler Euro (EUR) cinsindendir.</p>
+                            </div>
+                        </div>
+                        <div class="option-grid two-col" id="q_budget_group" data-name="q_budget">
+                            <label class="option-card" data-value="500000">&lt; 500.000 EUR (Mikro / Küçük Hibe)</label>
+                            <label class="option-card active" data-value="2000000">500.000 – 2.000.000 EUR (Orta Ölçek)</label>
+                            <label class="option-card" data-value="5000000">2.000.000 – 5.000.000 EUR (Geniş Konsorsiyum)</label>
+                            <label class="option-card" data-value="10000000">&gt; 5.000.000 EUR (Büyük Ölçekli Altyapı)</label>
+                            <label class="option-card unsure" data-value="unsure">Bütçe Henüz Belirlenmedi</label>
+                        </div>
+                        <input type="hidden" name="q_budget" value="2000000">
+                    </div>
+
+                    <!-- SORU 7: Özel Kriterler -->
+                    <div class="form-section">
+                        <div class="section-header">
+                            <span class="section-number">7</span>
+                            <div>
+                                <h3>Özel Şartlar ve Avantajlar</h3>
+                                <p class="section-desc">Spesifik çağrılarda zorunlu tutulan veya ek puan kazandıran kriterler.</p>
+                            </div>
+                        </div>
+                        <div class="checkbox-grid">
+                            <label class="check-card">
+                                <input type="checkbox" name="q_special_woman" value="yes">
+                                <span class="check-custom"></span>
+                                <span>Kadın Kurucu / Hissedar (EIC Women Innovators Ödülleri)</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_special_phd" value="yes">
+                                <span class="check-custom"></span>
+                                <span>Doktora Sonrası 5-15 Yıl Deneyimli Araştırmacı (ERC Consolidator)</span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="q_special_coordinator" value="yes">
+                                <span class="check-custom"></span>
+                                <span>Konsorsiyumda Proje Koordinatörü Olmak İstiyorum</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="button" id="btn-analyze" class="btn btn-primary btn-full">
+                        Eşleştirme Analizini Gerçekleştir
+                    </button>
+                </form>
+            </div>
+        </aside>
+
+        <!-- SAĞ PANEL: RAPOR -->
+        <main class="output-panel">
+            <div class="panel-header">
+                <div>
+                    <h2>Program Uyumluluk Raporu</h2>
+                    <p class="panel-sub">İki aşamalı kural motoru tarafından filtrelenen ve puanlanan çağrılar.</p>
+                </div>
+                <div class="panel-header-right">
+                    <span id="report-status" class="badge badge-pending">Girdi Bekleniyor</span>
+                    <div id="export-buttons" class="export-actions hidden">
+                        <button type="button" id="btn-copy-report" class="btn btn-sm btn-outline" title="Özet Raporu Panoya Kopyala">
+                            Özeti Kopyala
+                        </button>
+                        <button type="button" id="btn-print-report" class="btn btn-sm btn-outline" title="Yazdır / PDF Olarak Kaydet">
+                            Yazdır / PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="empty-report" class="report-empty">
+                <div class="empty-badge">F8 MOTORU HAZIR</div>
+                <h3>Analiz İçin Profil Belirtin</h3>
+                <p>Soldaki kriterleri seçerek ya da projenizi serbest metin olarak yazarak analizi
+                    başlatabilirsiniz.<br>
+                    Sistem tüm AB sanayi programlarını eleme ve puanlama süzgecinden geçirerek sonuçları sıralar.
+                </p>
+
+                <div class="empty-features-grid">
+                    <div class="feature-item">
+                        <div class="feature-title">Kesin Eleme (Hard Eligibility)</div>
+                        <div class="feature-desc">Ölçek, konsorsiyum ve TRL sınırlarını denetler. Uymayan çağrıları
+                            güvenle eler.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Açıklanabilir Uyum Skoru (Fit Score)</div>
+                        <div class="feature-desc">0-100 aralığında puan üretir; her soru için renk kodlu (uyumlu / kısmi / bilinmiyor / uyumsuz) gerekçesini
+                            ve veri güvenini gösterir.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Program Danışmanı (AI Asistan)</div>
+                        <div class="feature-desc">Özel koşullar ve başvuru takvimi hakkında anlık soru-cevap imkanı
+                            sunar.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="analysis-report" class="hidden">
+                <div id="summary-stats" class="report-summary"></div>
+
+                <div class="report-section">
+                    <div class="section-title-wrap">
+                        <h3 class="section-title">En Uyumlu Fon Programları (Öne Çıkanlar)</h3>
+                        <span class="section-badge-info">En Yüksek Skorlu 5 Program</span>
+                    </div>
+                    <div id="matches-list"></div>
+                </div>
+
+                <div id="rest-section" class="hidden report-section">
+                    <button id="btn-show-rest" class="btn btn-secondary btn-full">
+                        Diğer Uygun Programları Listele
+                    </button>
+                    <div id="rest-list" class="hidden"></div>
+                </div>
+
+                <div class="report-section">
+                    <div class="section-title-wrap">
+                        <h3 class="section-title">Başvuru Koşullarını Karşılamayan Programlar</h3>
+                        <span class="section-badge-muted">Ön Elemeye Takılanlar</span>
+                    </div>
+                    <p class="section-hint">Bu programlar ülke uygunluğu, kuruluş türü, zorunlu özel şart veya
+                        konsorsiyum şartı gibi kesin kriterler ya da süresi geçmiş son başvuru tarihi nedeniyle elenmiştir.
+                        Eksik (bilinmeyen) veri hiçbir çağrıyı tek başına elemez.</p>
+                    <div id="ineligible-list"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- LLM CHAT MODAL (AB FONLARI DANIŞMANI) -->
+    <div id="llm-chat-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <span class="modal-tag">AB AI DANIŞMANI</span>
+                    <div>
+                        <h3 id="chat-title">Çağrı Danışmanı</h3>
+                        <p id="chat-subtitle">Horizon Europe & EU Programmes Assistant</p>
+                    </div>
+                </div>
+                <button id="close-chat" class="btn-close" aria-label="Kapat">&times;</button>
+            </div>
+            <div class="modal-body" id="chat-history"></div>
+            <div class="modal-chips">
+                <span class="chips-label">Hızlı Sorular:</span>
+                <button type="button" class="btn-chip" data-q="Bu çağrıda Türkiye'deki kuruluşlar (KOBİ/Üniversite) fonlanabilir mi?">Türkiye Uygunluğu?</button>
+                <button type="button" class="btn-chip" data-q="Konsorsiyum şartı ve minimum ortak sayısı nedir?">Konsorsiyum Şartı</button>
+                <button type="button" class="btn-chip" data-q="Hibe bütçesi ve destek oranı ne kadardır?">Bütçe & Hibe Oranı</button>
+            </div>
+            <div class="modal-footer">
+                <input type="text" id="chat-input" class="form-control" placeholder="Bu AB çağrısının koşulları hakkında soru sorun... (Enter)">
+                <button id="btn-send-chat" class="btn btn-primary">Danış</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast-notification" class="toast hidden"></div>
+
+    <script src="isofon-bridge.js"></script>
+
+    <script src="env.js?v=9"></script>
+    <script src="eu_engine.js?v=10"></script>
+    <script src="eu_app.js?v=10"></script>
+</body>
+</html>
